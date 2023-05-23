@@ -50,7 +50,7 @@ namespace AppAPI.Controllers
         }
 
         // DELETE api/<ValuesController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         public bool Delete(Guid id)
         {
             var vtro = vaitr.GetAll().First(p => p.ID == id);
