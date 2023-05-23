@@ -32,7 +32,7 @@ namespace AppAPI.Controllers
         }
 
         // POST api/<GiaTriController>
-        [HttpPost("{id}")]
+        [HttpPost("Create_GiaTri")]
         public bool Post(string ten, Guid idThuocTinh)
         {
             GiaTri gTri = new GiaTri();

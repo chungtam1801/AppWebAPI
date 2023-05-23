@@ -32,7 +32,7 @@ namespace AppAPI.Controllers
         }
 
         // POST api/<ThuocTinhController>
-        [HttpPost("{id}")]
+        [HttpPost("Create_ThuocTinh")]
         public bool Post(string ten, DateTime ngaytao, int trangthai)
         {
             ThuocTinh thuocTinh = new ThuocTinh();
