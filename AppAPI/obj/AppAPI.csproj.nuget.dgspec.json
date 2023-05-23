@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppAPI\\AppAPI.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\AppAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppAPI\\AppAPI.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\AppAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppAPI\\AppAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\AppAPI.csproj",
         "projectName": "AppAPI",
-        "projectPath": "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppAPI\\AppAPI.csproj",
-        "packagesPath": "C:\\Users\\huedh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppAPI\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\AppAPI.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\huedh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppData\\AppData.csproj": {
-                "projectPath": "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppData\\AppData.csproj"
+              "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj"
               }
             }
           }
@@ -80,24 +80,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppData\\AppData.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppData\\AppData.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj",
         "projectName": "AppData",
-        "projectPath": "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppData\\AppData.csproj",
-        "packagesPath": "C:\\Users\\huedh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huedh\\Desktop\\Gitdemo\\AppData\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\huedh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -155,7 +155,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
