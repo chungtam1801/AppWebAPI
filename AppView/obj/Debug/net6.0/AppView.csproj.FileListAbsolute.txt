@@ -33,3 +33,43 @@ C:\Users\HP\Documents\FPT_Polytechnic\C#5\App_Ban_Quan_Ao_Thoi_Trang_Nam\AppView
 C:\Users\HP\Documents\FPT_Polytechnic\C#5\App_Ban_Quan_Ao_Thoi_Trang_Nam\AppView\obj\Debug\net6.0\AppView.pdb
 C:\Users\HP\Documents\FPT_Polytechnic\C#5\App_Ban_Quan_Ao_Thoi_Trang_Nam\AppView\obj\Debug\net6.0\AppView.genruntimeconfig.cache
 C:\Users\HP\Documents\FPT_Polytechnic\C#5\App_Ban_Quan_Ao_Thoi_Trang_Nam\AppView\obj\Debug\net6.0\ref\AppView.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\AppView.staticwebassets.runtime.json
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\AppView.exe
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\AppView.deps.json
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\AppView.runtimeconfig.json
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\AppView.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\AppView.pdb
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.AssemblyInfo.cs
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\staticwebassets\msbuild.AppView.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\staticwebassets\msbuild.build.AppView.props
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AppView.props
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AppView.props
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\scopedcss\bundle\AppView.styles.css
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\scopedcss\projectbundle\AppView.bundle.scp.css
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.csproj.CopyComplete
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\refint\AppView.dll
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.pdb
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\AppView.genruntimeconfig.cache
+C:\Users\Admin\Desktop\New folder (3)\AppView\obj\Debug\net6.0\ref\AppView.dll

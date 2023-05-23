@@ -22,7 +22,7 @@ namespace AppData.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.BienThe", b =>
+            modelBuilder.Entity("AppData.Models.BienThe", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -54,7 +54,7 @@ namespace AppData.Migrations
                     b.ToTable("BienThe", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ChiTietBienThe", b =>
+            modelBuilder.Entity("AppData.Models.ChiTietBienThe", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -78,7 +78,7 @@ namespace AppData.Migrations
                     b.ToTable("ChiTietBienThe", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ChiTietGioHang", b =>
+            modelBuilder.Entity("AppData.Models.ChiTietGioHang", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -102,7 +102,7 @@ namespace AppData.Migrations
                     b.ToTable("ChiTietGioHang", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ChiTietHoaDon", b =>
+            modelBuilder.Entity("AppData.Models.ChiTietHoaDon", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -132,7 +132,7 @@ namespace AppData.Migrations
                     b.ToTable("ChiTietHoaDon", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ChiTietKhuyenMai", b =>
+            modelBuilder.Entity("AppData.Models.ChiTietKhuyenMai", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -156,7 +156,7 @@ namespace AppData.Migrations
                     b.ToTable("ChiTietKhuyenMai", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GiaTri", b =>
+            modelBuilder.Entity("AppData.Models.GiaTri", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -176,7 +176,7 @@ namespace AppData.Migrations
                     b.ToTable("GiaTri", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GioHang", b =>
+            modelBuilder.Entity("AppData.Models.GioHang", b =>
                 {
                     b.Property<Guid>("IDNguoiDung")
                         .HasColumnType("uniqueidentifier");
@@ -189,7 +189,7 @@ namespace AppData.Migrations
                     b.ToTable("GioHang", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.HoaDon", b =>
+            modelBuilder.Entity("AppData.Models.HoaDon", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -239,7 +239,7 @@ namespace AppData.Migrations
                     b.ToTable("HoaDon", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.KhuyenMai", b =>
+            modelBuilder.Entity("AppData.Models.KhuyenMai", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -270,7 +270,7 @@ namespace AppData.Migrations
                     b.ToTable("KhuyenMai", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.LichSuTichDiem", b =>
+            modelBuilder.Entity("AppData.Models.LichSuTichDiem", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -302,7 +302,7 @@ namespace AppData.Migrations
                     b.ToTable("LichSuTichDiem", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.LoaiSP", b =>
+            modelBuilder.Entity("AppData.Models.LoaiSP", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -325,7 +325,7 @@ namespace AppData.Migrations
                     b.ToTable("LoaiSP", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.NguoiDung", b =>
+            modelBuilder.Entity("AppData.Models.NguoiDung", b =>
                 {
                     b.Property<Guid>("IDNguoiDung")
                         .ValueGeneratedOnAdd()
@@ -377,7 +377,7 @@ namespace AppData.Migrations
                     b.ToTable("NguoiDung", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.QuyDoiDiem", b =>
+            modelBuilder.Entity("AppData.Models.QuyDoiDiem", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -400,7 +400,7 @@ namespace AppData.Migrations
                     b.ToTable("QuyDoiDiem", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.SanPham", b =>
+            modelBuilder.Entity("AppData.Models.SanPham", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -427,7 +427,7 @@ namespace AppData.Migrations
                     b.ToTable("SanPham", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ThuocTinh", b =>
+            modelBuilder.Entity("AppData.Models.ThuocTinh", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -448,7 +448,7 @@ namespace AppData.Migrations
                     b.ToTable("ThuocTinh", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ThuocTinhLoaiSP", b =>
+            modelBuilder.Entity("AppData.Models.ThuocTinhLoaiSP", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -469,7 +469,7 @@ namespace AppData.Migrations
                     b.ToTable("ThuocTinhSanPham", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.VaiTro", b =>
+            modelBuilder.Entity("AppData.Models.VaiTro", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -487,7 +487,7 @@ namespace AppData.Migrations
                     b.ToTable("VaiTro", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.Voucher", b =>
+            modelBuilder.Entity("AppData.Models.Voucher", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -527,9 +527,9 @@ namespace AppData.Migrations
                     b.ToTable("Voucher", (string)null);
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.BienThe", b =>
+            modelBuilder.Entity("AppData.Models.BienThe", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.SanPham", "SanPham")
+                    b.HasOne("AppData.Models.SanPham", "SanPham")
                         .WithMany("BienThes")
                         .HasForeignKey("IDSanPham")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -538,15 +538,15 @@ namespace AppData.Migrations
                     b.Navigation("SanPham");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ChiTietBienThe", b =>
+            modelBuilder.Entity("AppData.Models.ChiTietBienThe", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.BienThe", "BienThe")
+                    b.HasOne("AppData.Models.BienThe", "BienThe")
                         .WithMany("ChiTietBienThes")
                         .HasForeignKey("IDBienThe")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GiaTri", "GiaTri")
+                    b.HasOne("AppData.Models.GiaTri", "GiaTri")
                         .WithMany("ChiTietBienThes")
                         .HasForeignKey("IDGiaTri")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -557,15 +557,15 @@ namespace AppData.Migrations
                     b.Navigation("GiaTri");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ChiTietGioHang", b =>
+            modelBuilder.Entity("AppData.Models.ChiTietGioHang", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.BienThe", "BienThe")
+                    b.HasOne("AppData.Models.BienThe", "BienThe")
                         .WithMany("ChiTietGioHangs")
                         .HasForeignKey("IDBienThe")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GioHang", "GioHang")
+                    b.HasOne("AppData.Models.GioHang", "GioHang")
                         .WithMany("ChiTietGioHangs")
                         .HasForeignKey("IDNguoiDung")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -576,15 +576,15 @@ namespace AppData.Migrations
                     b.Navigation("GioHang");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ChiTietHoaDon", b =>
+            modelBuilder.Entity("AppData.Models.ChiTietHoaDon", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.BienThe", "BienThe")
+                    b.HasOne("AppData.Models.BienThe", "BienThe")
                         .WithMany("ChiTietHoaDons")
                         .HasForeignKey("IDBienThe")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.HoaDon", "HoaDon")
+                    b.HasOne("AppData.Models.HoaDon", "HoaDon")
                         .WithMany("ChiTietHoaDons")
                         .HasForeignKey("IDHoaDon")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -595,15 +595,15 @@ namespace AppData.Migrations
                     b.Navigation("HoaDon");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ChiTietKhuyenMai", b =>
+            modelBuilder.Entity("AppData.Models.ChiTietKhuyenMai", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.BienThe", "BienThe")
+                    b.HasOne("AppData.Models.BienThe", "BienThe")
                         .WithMany("ChiTietKhuyenMais")
                         .HasForeignKey("IDBienThe")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.KhuyenMai", "KhuyenMai")
+                    b.HasOne("AppData.Models.KhuyenMai", "KhuyenMai")
                         .WithMany("ChiTietKhuyenMais")
                         .HasForeignKey("IDKhuyenMai")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -614,9 +614,9 @@ namespace AppData.Migrations
                     b.Navigation("KhuyenMai");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GiaTri", b =>
+            modelBuilder.Entity("AppData.Models.GiaTri", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ThuocTinh", "ThuocTinh")
+                    b.HasOne("AppData.Models.ThuocTinh", "ThuocTinh")
                         .WithMany("GiaTris")
                         .HasForeignKey("IdThuocTinh")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -625,26 +625,26 @@ namespace AppData.Migrations
                     b.Navigation("ThuocTinh");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GioHang", b =>
+            modelBuilder.Entity("AppData.Models.GioHang", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.NguoiDung", "NguoiDung")
+                    b.HasOne("AppData.Models.NguoiDung", "NguoiDung")
                         .WithOne("GioHang")
-                        .HasForeignKey("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GioHang", "IDNguoiDung")
+                        .HasForeignKey("AppData.Models.GioHang", "IDNguoiDung")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("NguoiDung");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.HoaDon", b =>
+            modelBuilder.Entity("AppData.Models.HoaDon", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.NguoiDung", "NguoiDung")
+                    b.HasOne("AppData.Models.NguoiDung", "NguoiDung")
                         .WithMany("HoaDons")
                         .HasForeignKey("IDNguoiDung")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.Voucher", "Voucher")
+                    b.HasOne("AppData.Models.Voucher", "Voucher")
                         .WithMany("HoaDons")
                         .HasForeignKey("IDVoucher")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -655,19 +655,19 @@ namespace AppData.Migrations
                     b.Navigation("Voucher");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.LichSuTichDiem", b =>
+            modelBuilder.Entity("AppData.Models.LichSuTichDiem", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.HoaDon", "HoaDon")
+                    b.HasOne("AppData.Models.HoaDon", "HoaDon")
                         .WithMany("LichSuTichDiems")
                         .HasForeignKey("IDHoaDon")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.NguoiDung", "NguoiDung")
+                    b.HasOne("AppData.Models.NguoiDung", "NguoiDung")
                         .WithMany("LichSuTichDiems")
                         .HasForeignKey("IDNguoiDung");
 
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.QuyDoiDiem", "QuyDoiDiem")
+                    b.HasOne("AppData.Models.QuyDoiDiem", "QuyDoiDiem")
                         .WithMany("LichSuTichDiems")
                         .HasForeignKey("IDQuyDoiDiem")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -680,18 +680,18 @@ namespace AppData.Migrations
                     b.Navigation("QuyDoiDiem");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.LoaiSP", b =>
+            modelBuilder.Entity("AppData.Models.LoaiSP", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.LoaiSP", "LoaiSPCha")
+                    b.HasOne("AppData.Models.LoaiSP", "LoaiSPCha")
                         .WithMany()
                         .HasForeignKey("IDLoaiSPCha");
 
                     b.Navigation("LoaiSPCha");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.NguoiDung", b =>
+            modelBuilder.Entity("AppData.Models.NguoiDung", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.VaiTro", "VaiTro")
+                    b.HasOne("AppData.Models.VaiTro", "VaiTro")
                         .WithMany("NguoiDungs")
                         .HasForeignKey("IDVaiTro")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -700,9 +700,9 @@ namespace AppData.Migrations
                     b.Navigation("VaiTro");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.SanPham", b =>
+            modelBuilder.Entity("AppData.Models.SanPham", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.LoaiSP", "LoaiSP")
+                    b.HasOne("AppData.Models.LoaiSP", "LoaiSP")
                         .WithMany("SanPhams")
                         .HasForeignKey("IDLoaiSP")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -711,15 +711,15 @@ namespace AppData.Migrations
                     b.Navigation("LoaiSP");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ThuocTinhLoaiSP", b =>
+            modelBuilder.Entity("AppData.Models.ThuocTinhLoaiSP", b =>
                 {
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.LoaiSP", "LoaiSP")
+                    b.HasOne("AppData.Models.LoaiSP", "LoaiSP")
                         .WithMany("ThuocTinhLoaiSPs")
                         .HasForeignKey("IDLoaiSP")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ThuocTinh", "ThuocTinh")
+                    b.HasOne("AppData.Models.ThuocTinh", "ThuocTinh")
                         .WithMany("ThuocTinhLoaiSPs")
                         .HasForeignKey("IDThuocTinh")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -730,7 +730,7 @@ namespace AppData.Migrations
                     b.Navigation("ThuocTinh");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.BienThe", b =>
+            modelBuilder.Entity("AppData.Models.BienThe", b =>
                 {
                     b.Navigation("ChiTietBienThes");
 
@@ -741,36 +741,36 @@ namespace AppData.Migrations
                     b.Navigation("ChiTietKhuyenMais");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GiaTri", b =>
+            modelBuilder.Entity("AppData.Models.GiaTri", b =>
                 {
                     b.Navigation("ChiTietBienThes");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.GioHang", b =>
+            modelBuilder.Entity("AppData.Models.GioHang", b =>
                 {
                     b.Navigation("ChiTietGioHangs");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.HoaDon", b =>
+            modelBuilder.Entity("AppData.Models.HoaDon", b =>
                 {
                     b.Navigation("ChiTietHoaDons");
 
                     b.Navigation("LichSuTichDiems");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.KhuyenMai", b =>
+            modelBuilder.Entity("AppData.Models.KhuyenMai", b =>
                 {
                     b.Navigation("ChiTietKhuyenMais");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.LoaiSP", b =>
+            modelBuilder.Entity("AppData.Models.LoaiSP", b =>
                 {
                     b.Navigation("SanPhams");
 
                     b.Navigation("ThuocTinhLoaiSPs");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.NguoiDung", b =>
+            modelBuilder.Entity("AppData.Models.NguoiDung", b =>
                 {
                     b.Navigation("GioHang");
 
@@ -779,29 +779,29 @@ namespace AppData.Migrations
                     b.Navigation("LichSuTichDiems");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.QuyDoiDiem", b =>
+            modelBuilder.Entity("AppData.Models.QuyDoiDiem", b =>
                 {
                     b.Navigation("LichSuTichDiems");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.SanPham", b =>
+            modelBuilder.Entity("AppData.Models.SanPham", b =>
                 {
                     b.Navigation("BienThes");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.ThuocTinh", b =>
+            modelBuilder.Entity("AppData.Models.ThuocTinh", b =>
                 {
                     b.Navigation("GiaTris");
 
                     b.Navigation("ThuocTinhLoaiSPs");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.VaiTro", b =>
+            modelBuilder.Entity("AppData.Models.VaiTro", b =>
                 {
                     b.Navigation("NguoiDungs");
                 });
 
-            modelBuilder.Entity("App_Ban_Quan_Ao_Thoi_Trang_Nam.Models.Voucher", b =>
+            modelBuilder.Entity("AppData.Models.Voucher", b =>
                 {
                     b.Navigation("HoaDons");
                 });
