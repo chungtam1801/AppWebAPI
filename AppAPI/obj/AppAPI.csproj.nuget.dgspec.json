@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppAPI\\AppAPI.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\AppAPI.csproj": {}
   },
   "projects": {
-    "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppAPI\\AppAPI.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\AppAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppAPI\\AppAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\AppAPI.csproj",
         "projectName": "AppAPI",
-        "projectPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppAPI\\AppAPI.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\AppAPI.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppAPI\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj": {
-                "projectPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj"
+              "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj"
               }
             }
           }
@@ -80,18 +80,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj",
         "projectName": "AppData",
-        "projectPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\AppData.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder (5)\\AppData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -155,7 +155,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
