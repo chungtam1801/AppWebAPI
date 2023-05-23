@@ -33,10 +33,10 @@ namespace AppAPI.Controllers
 
         // POST api/<GioHangController>
         [HttpPost("create-gio-hang")]
-        public bool Post(DateTime ngaytao)
+        public bool Post(Guid IdNguoiDung, DateTime ngaytao)
         {
             GioHang gioHang = new GioHang();
-            gioHang.IDNguoiDung = Guid.NewGuid();
+            gioHang.IDNguoiDung = IdNguoiDung;
             gioHang.NgayTao=ngaytao;
             return repos.Add(gioHang);
         }
