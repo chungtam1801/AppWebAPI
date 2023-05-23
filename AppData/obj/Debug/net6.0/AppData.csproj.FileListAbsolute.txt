@@ -26,3 +26,17 @@ E:\Ky_6\NET0105\AppData\obj\Debug\net6.0\refint\AppData.dll
 E:\Ky_6\NET0105\AppData\obj\Debug\net6.0\AppData.pdb
 E:\Ky_6\NET0105\AppData\obj\Debug\net6.0\AppData.genruntimeconfig.cache
 E:\Ky_6\NET0105\AppData\obj\Debug\net6.0\ref\AppData.dll
+C:\Users\huedh\Desktop\Gitdemo\AppData\bin\Debug\net6.0\AppData.deps.json
+C:\Users\huedh\Desktop\Gitdemo\AppData\bin\Debug\net6.0\AppData.runtimeconfig.json
+C:\Users\huedh\Desktop\Gitdemo\AppData\bin\Debug\net6.0\AppData.dll
+C:\Users\huedh\Desktop\Gitdemo\AppData\bin\Debug\net6.0\AppData.pdb
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\AppData.csproj.AssemblyReference.cache
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\AppData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\AppData.AssemblyInfoInputs.cache
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\AppData.AssemblyInfo.cs
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\AppData.csproj.CoreCompileInputs.cache
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\AppData.dll
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\refint\AppData.dll
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\AppData.pdb
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\AppData.genruntimeconfig.cache
+C:\Users\huedh\Desktop\Gitdemo\AppData\obj\Debug\net6.0\ref\AppData.dll
