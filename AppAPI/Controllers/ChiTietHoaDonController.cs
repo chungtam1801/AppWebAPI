@@ -37,13 +37,14 @@ namespace AppAPI.Controllers
         // POST api/<HoaDonController>
         [HttpPost("Create-HoaDon")]
 
-        public bool Post(DateTime ngayTao, DateTime ngayThanhToan, string tenNguoiNhan, string sdt, string email, string diaChi, int tienShip, string phuongthucthanhtoan, int trangThaiGiaoHang, Guid idNguoiDung, Guid idVoucher)
+        public bool Post(DateTime ngayTao, DateTime? ngayThanhToan, string tenNguoiNhan, string sdt, string email, string diaChi, int tienShip, string phuongthucthanhtoan, int trangThaiGiaoHang, Guid? idNguoiDung, Guid? idVoucher)
         {
             HoaDon hoaDon = new HoaDon();
             hoaDon.ID = Guid.NewGuid();
             hoaDon.NgayTao = ngayTao;
             hoaDon.NgayThanhToan = ngayThanhToan;
-            hoaDon.SDT = sdt; ;
+            hoaDon.TenNguoiNhan = tenNguoiNhan;
+            hoaDon.SDT = sdt; 
             hoaDon.Email = email;
             hoaDon.DiaChi = diaChi;
             hoaDon.TienShip = tienShip;
