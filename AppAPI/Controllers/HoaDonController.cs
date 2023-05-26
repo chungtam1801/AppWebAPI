@@ -1,80 +1,93 @@
 ﻿using AppData.IRepositories;
 using AppData.Models;
+using AppData.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AppData.Repositories;
 
 namespace AppAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ChiTietHoaDonController : ControllerBase
+    public class HoaDonController : ControllerBase
     {
-        private readonly IAllRepository<ChiTietHoaDon> repos;
+        private readonly IAllRepository<HoaDon> repos;
         AssignmentDBContext context = new AssignmentDBContext();
-        DbSet<ChiTietHoaDon> chiTietHoaDons;
-
-        public ChiTietHoaDonController()
+        DbSet<HoaDon> hoadon;
+        public HoaDonController()
         {
-            chiTietHoaDons = context.ChiTietHoaDons;
-            AllRepository<ChiTietHoaDon> all = new AllRepository<ChiTietHoaDon>(context, chiTietHoaDons);
+            hoadon = context.HoaDons;
+            AllRepository<HoaDon> all = new AllRepository<HoaDon>(context, hoadon);
             repos = all;
         }
-        // GET: api/<ChiTietHoaDOnController>
+
+        // GET: api/<HoaDOnController>
         [HttpGet]
-        public IEnumerable<ChiTietHoaDon> Get()
+        public IEnumerable<HoaDon> Get()
         {
             return repos.GetAll();
         }
+        // GET api/<HoaDonController>/5
         [HttpGet("{id}")]
-        public ChiTietHoaDon Get(Guid id)
+        public HoaDon Get(Guid id)
         {
             return repos.GetAll().FirstOrDefault(x => x.ID == id);
         }
 
-        [HttpPost("Create-ctHoaDon")]
+        // POST api/<HoaDonController>
+        [HttpPost("Create-HoaDon")]
 
-        public bool Post(int donGia, int soLuong, int trangThai, Guid idBienThe, Guid idHoaDon)
+        public bool Post(DateTime ngayTao, DateTime? ngayThanhToan, string tenNguoiNhan, string sdt, string email, string diaChi, int tienShip, string phuongthucthanhtoan, int trangThaiGiaoHang, Guid? idNguoiDung, Guid? idVoucher)
         {
-            ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon();
-            chiTietHoaDon.ID = Guid.NewGuid();
-            chiTietHoaDon.DonGia = donGia;
-            chiTietHoaDon.SoLuong = soLuong;
-            chiTietHoaDon.TrangThai = trangThai;
-            chiTietHoaDon.IDBienThe = idBienThe;
-            chiTietHoaDon.IDHoaDon = idHoaDon;
-            return repos.Add(chiTietHoaDon);
+            HoaDon hoaDon = new HoaDon();
+            hoaDon.ID = Guid.NewGuid();
+            hoaDon.NgayTao = ngayTao;
+            hoaDon.NgayThanhToan = ngayThanhToan;
+            hoaDon.TenNguoiNhan = tenNguoiNhan;
+            hoaDon.SDT = sdt;
+            hoaDon.Email = email;
+            hoaDon.DiaChi = diaChi;
+            hoaDon.TienShip = tienShip;
+            hoaDon.PhuongThucThanhToan = phuongthucthanhtoan;
+            hoaDon.TrangThaiGiaoHang = trangThaiGiaoHang;
+            hoaDon.IDNguoiDung = idNguoiDung;
+            hoaDon.IDVoucher = idVoucher;
+            return repos.Add(hoaDon);
         }
-
-        // PUT api/<ChiTietHoaDonController>/5
-        [HttpPut("Update-ChiTietHoaDon")]
-
-        public bool UpdatectHoaDon(Guid id, int donGia, int soLuong, int trangThai, Guid idBienThe, Guid idHoaDon)
+        [HttpPut("Update-HoaDon")]
+        public bool UpdateHoaDon(Guid id, DateTime ngayTao, DateTime ngayThanhToan, string tenNguoiNhan, string sdt, string email, string diaChi, int tienShip, string phuongthucthanhtoan, int trangThaiGiaoHang, Guid idNguoiDung, Guid idVoucher)
         {
-            var chiTietHoaDon = repos.GetAll().FirstOrDefault(p => p.ID == id);
-            if (chiTietHoaDon != null)
+            var hoaDon = repos.GetAll().FirstOrDefault(h => h.ID == id);
+            if (hoadon != null)
             {
-                chiTietHoaDon.DonGia = donGia;
-                chiTietHoaDon.SoLuong = soLuong;
-                chiTietHoaDon.TrangThai = trangThai;
-                chiTietHoaDon.IDBienThe = idBienThe;
-                chiTietHoaDon.IDHoaDon = idHoaDon;
-                return repos.Add(chiTietHoaDon);
+                hoaDon.NgayTao = ngayTao;
+                hoaDon.NgayThanhToan = ngayThanhToan;
+                hoaDon.SDT = sdt; ;
+                hoaDon.Email = email;
+                hoaDon.DiaChi = diaChi;
+                hoaDon.TienShip = tienShip;
+                hoaDon.PhuongThucThanhToan = phuongthucthanhtoan;
+                hoaDon.TrangThaiGiaoHang = trangThaiGiaoHang;
+                hoaDon.IDNguoiDung = idNguoiDung;
+                hoaDon.IDVoucher = idVoucher;
+                return repos.Update
+                    (hoaDon);
             }
             else { return false; }
         }
-        // DELETE api/<ChiTietHoaDonController>/5
-        [HttpDelete("Delete-ChiTietHoaDon")]
-        public bool DeleteChiTietHoaDon(Guid id)
+
+        [HttpDelete("Delete-HoaDon")]
+
+        public bool DeleteHoaDon(Guid id)
         {
-            var chiTietHoaDon = repos.GetAll().FirstOrDefault(p => p.ID == id);
-            if (chiTietHoaDon != null)
+            var hoaDon = repos.GetAll().FirstOrDefault(p => p.ID == id);
+            if (hoaDon != null)
             {
-                return repos.Delete(chiTietHoaDon);
+                return repos.Delete(hoaDon);
             }
             else { return false; }
         }
+
     }
 }
 

@@ -711,23 +711,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Dat\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppView\\AppView.csproj",
+      "projectUniqueName": "C:\\C#5\\ASM\\AppWebAPI\\AppView\\AppView.csproj",
       "projectName": "AppView",
-      "projectPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppView\\AppView.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppView\\obj\\",
+      "projectPath": "C:\\C#5\\ASM\\AppWebAPI\\AppView\\AppView.csproj",
+      "packagesPath": "C:\\Users\\Dat\\.nuget\\packages\\",
+      "outputPath": "C:\\C#5\\ASM\\AppWebAPI\\AppView\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -784,7 +784,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
