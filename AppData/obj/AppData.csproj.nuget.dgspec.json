@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj": {}
+    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj": {}
   },
   "projects": {
-    "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj": {
+    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj",
         "projectName": "AppData",
-        "projectPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\AppData.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Cshap 5 kì 6\\ASMENT\\AppWebAPI\\AppData\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,8 +65,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
