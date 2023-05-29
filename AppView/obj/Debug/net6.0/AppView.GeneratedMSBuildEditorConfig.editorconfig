@@ -9,85 +9,85 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppView
 build_property.RootNamespace = AppView
-build_property.ProjectDir = C:\Users\HP\Documents\FPT_Polytechnic\C#5\App_Ban_Quan_Ao_Thoi_Trang_Nam\AppView\
+build_property.ProjectDir = C:\Users\huedh\Desktop\APPBanHang\AppView\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HP\Documents\FPT_Polytechnic\C#5\App_Ban_Quan_Ao_Thoi_Trang_Nam\AppView
+build_property.MSBuildProjectDirectory = C:\Users\huedh\Desktop\APPBanHang\AppView
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Areas/Admin/Views/Admin/Index.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Areas/Admin/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Areas/Admin/Views/Admin/Table.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Areas/Admin/Views/Admin/Table.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/AboutUs.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/Blog.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/Blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/BlogDetails.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/BlogDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/CheckOut.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/CheckOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVja091dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/Contacts.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/Contacts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/Index.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/ProductDetail.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/ProductDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/Shop.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Home/ShoppingCart.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Home/ShoppingCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wcGluZ0NhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Login/Login.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Login/Register.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Login/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Shared/Error.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/_ViewImports.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/_ViewStart.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Shared/_Layout.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ysschlnp9m
 
-[C:/Users/HP/Documents/FPT_Polytechnic/C\#5/App_Ban_Quan_Ao_Thoi_Trang_Nam/AppView/Views/Shared/_LayoutforAdmin.cshtml]
+[C:/Users/huedh/Desktop/APPBanHang/AppView/Views/Shared/_LayoutforAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRmb3JBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-9kh5r9el6q
