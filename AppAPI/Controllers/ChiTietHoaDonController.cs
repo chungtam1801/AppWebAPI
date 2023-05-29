@@ -52,7 +52,7 @@ namespace AppAPI.Controllers
             chiTietHoaDon.IDHoaDon = idHoaDon;
             if (repos.GetAll().Exists(p => p.IDBienThe == idBienThe && p.IDHoaDon == idHoaDon))
             {
-                Guid id = repos.GetAll().Find(p => p.IDBienThe == idBienThe && p.IDHoaDon == idHoaDon).ID;
+               
                 ChiTietHoaDon chiTietHoaDon1 = repos.GetAll().Find(p => p.IDBienThe == idBienThe && p.IDHoaDon == idHoaDon);
 
                 if (chiTietHoaDon1.SoLuong + soLuong > bientheres.GetAll().Find(p => p.ID == idBienThe).SoLuong)
