@@ -6,6 +6,7 @@
         public string Ten { get; set; }
         public string TenDem { get; set; }
         public string Ho { get; set; }
+        public string Password { get; set; }
         public int GioiTinh { get; set; }
         public DateTime NgaySinh { get; set; }
         public string Email { get; set; }

@@ -12,6 +12,7 @@ namespace AppData.Configurations
             builder.Property(x => x.Ten).HasColumnType("nvarchar(15)");
             builder.Property(x => x.TenDem).HasColumnType("nvarchar(15)");
             builder.Property(x => x.Ho).HasColumnType("nvarchar(15)");
+            builder.Property(x => x.Password).HasColumnType("varchar(15)");
             builder.Property(x => x.GioiTinh).HasColumnType("int");
             builder.Property(x => x.NgaySinh).HasColumnType("datetime");
             builder.Property(x => x.Email).HasColumnType("varchar(50)");
