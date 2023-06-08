@@ -34,25 +34,11 @@ namespace AppAPI.Controllers
         {
             return repos.GetAll().FirstOrDefault(x => x.ID == id);
         }
-
         // POST api/<HoaDonController>
         [HttpPost("Create-HoaDon")]
-
-        public bool Post(DateTime ngayTao, DateTime? ngayThanhToan, string tenNguoiNhan, string sdt, string email, string diaChi, int tienShip, string phuongthucthanhtoan, int trangThaiGiaoHang, Guid? idNguoiDung, Guid? idVoucher)
+        //DateTime ngayTao, DateTime? ngayThanhToan, string tenNguoiNhan, string sdt, string email, string diaChi, int tienShip, string phuongthucthanhtoan, int trangThaiGiaoHang, Guid? idNguoiDung, Guid? idVoucher
+        public bool Post(HoaDon hoaDon)
         {
-            HoaDon hoaDon = new HoaDon();
-            hoaDon.ID = Guid.NewGuid();
-            hoaDon.NgayTao = ngayTao;
-            hoaDon.NgayThanhToan = ngayThanhToan;
-            hoaDon.TenNguoiNhan = tenNguoiNhan;
-            hoaDon.SDT = sdt;
-            hoaDon.Email = email;
-            hoaDon.DiaChi = diaChi;
-            hoaDon.TienShip = tienShip;
-            hoaDon.PhuongThucThanhToan = phuongthucthanhtoan;
-            hoaDon.TrangThaiGiaoHang = trangThaiGiaoHang;
-            hoaDon.IDNguoiDung = idNguoiDung;
-            hoaDon.IDVoucher = idVoucher;
             return repos.Add(hoaDon);
         }
         [HttpPut("Update-HoaDon")]

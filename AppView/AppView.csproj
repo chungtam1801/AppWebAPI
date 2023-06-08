@@ -19,4 +19,8 @@
     <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AppData\AppData.csproj" />
+  </ItemGroup>
+
 </Project>
