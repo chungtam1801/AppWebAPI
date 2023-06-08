@@ -54,3 +54,17 @@ D:\Cshap 5 kì 6\ASMENT\AppWebAPI\AppData\obj\Debug\net6.0\refint\AppData.dll
 D:\Cshap 5 kì 6\ASMENT\AppWebAPI\AppData\obj\Debug\net6.0\AppData.pdb
 D:\Cshap 5 kì 6\ASMENT\AppWebAPI\AppData\obj\Debug\net6.0\AppData.genruntimeconfig.cache
 D:\Cshap 5 kì 6\ASMENT\AppWebAPI\AppData\obj\Debug\net6.0\ref\AppData.dll
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\bin\Debug\net6.0\AppData.deps.json
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\bin\Debug\net6.0\AppData.runtimeconfig.json
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\bin\Debug\net6.0\AppData.dll
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\bin\Debug\net6.0\AppData.pdb
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\AppData.csproj.AssemblyReference.cache
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\AppData.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\AppData.AssemblyInfoInputs.cache
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\AppData.AssemblyInfo.cs
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\AppData.csproj.CoreCompileInputs.cache
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\AppData.dll
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\refint\AppData.dll
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\AppData.pdb
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\AppData.genruntimeconfig.cache
+D:\Cshap 5 kì 6\ASM\AppWebAPI\AppData\obj\Debug\net6.0\ref\AppData.dll
