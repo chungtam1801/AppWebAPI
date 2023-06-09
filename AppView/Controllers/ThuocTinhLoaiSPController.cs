@@ -62,7 +62,7 @@ namespace AppView.Controllers
         {
 
             var url =
-                $"https://localhost:7021/api/ThuocTinhLoaiSP/30a7a2f8-6bbd-4444-98d4-c4cd26bab86f?idThuocTinh={ttlSP.IDThuocTinh}&idLoaiSP={ttlSP.IDLoaiSP}";
+                $"https://localhost:7021/api/ThuocTinhLoaiSP/74598c46-2639-4077-ba0f-235e52269dda?idThuocTinh={ttlSP.IDThuocTinh}&idLoaiSP={ttlSP.IDLoaiSP}";
             var response = await httpClients.PutAsync(url, null);
             if (response.IsSuccessStatusCode) return RedirectToAction("GetAllThuocTinhLoaiSP");
 
