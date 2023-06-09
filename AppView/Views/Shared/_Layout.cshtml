@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var username = Context.Session.GetString("UserName");
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,18 +43,37 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a asp-controller="Login" asp-action="Login">
-                                    Sign in
-                                </a>
+
                                 <a href="#">FAQs</a>
                             </div>
                             <div class="header__top__hover">
-                                <span>Usd <i class="arrow_carrot-down"></i></span>
-                                <ul>
-                                    <li>USD</li>
-                                    <li>EUR</li>
-                                    <li>USD</li>
-                                </ul>
+                                @{
+                                    if (username != null)
+                                    {
+                                        <span>
+                                            <a asp-controller="Login" asp-action="Login" style="color:white">
+                                                Hello: @username
+                                            </a>
+                                            <i class="arrow_carrot-down"></i>
+                                            <ul>
+                                                <li>
+                                                    <a asp-controller="Login" asp-action="Profile">PROFILE</a>
+                                                </li>
+                                                <li>
+                                                    <a asp-controller="Login" asp-action="LogOut">LOGOUT</a>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <a asp-controller="Login" asp-action="Login" style="color:white">
+                                            SIGN IN
+                                        </a>
+                                    }
+                                }
+
+
                             </div>
                         </div>
                     </div>
@@ -78,11 +100,11 @@
                                     <li><a asp-controller="Home" asp-action="ShoppingCart">Shopping Cart</a></li>
                                     <li><a asp-controller="Home" asp-action="CheckOut">Check Out</a></li>
                                     <li><a asp-controller="Home" asp-action="BlogDetails">Blog Details</a></li>
-                                   
-                                    
+
+
                                 </ul>
                             </li>
-                           
+
                             <li><a asp-controller="Home" asp-action="Blog">Blog</a></li>
                             <li><a asp-controller="Home" asp-action="Contacts">Contacts</a></li>
                         </ul>
@@ -92,7 +114,7 @@
                     <div class="header__nav__option">
                         <a href="#" class="search-switch"><img src="/img/icon/search.png" alt=""></a>
                         <a href="#"><img src="/img/icon/heart.png" alt=""></a>
-                        <a asp-controller="Home" asp-action="ShoppingCart"><img src="/img/icon/cart.png" alt=""> <span>0</span></a>
+                        <a asp-controller="GioHang" asp-action="ShowCart"><img src="/img/icon/cart.png" alt=""> <span>0</span></a>
                         <div class="price">$0.00</div>
                     </div>
                 </div>
