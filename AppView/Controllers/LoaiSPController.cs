@@ -29,7 +29,7 @@ namespace AppView.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(LoaiSP loaiSP )
         {
-            var url = $"https://localhost:7021/api/LoaiSP/create-loaisp?ten={loaiSP.Ten}";
+            var url = $"https://localhost:7021/api/LoaiSP/create-loaisp?ten={loaiSP.Ten}&idLoaiSPCha={loaiSP.IDLoaiSPCha}";
             var response = await httpClients.PostAsync(url, null);
             if (response.IsSuccessStatusCode) return RedirectToAction("GetAllLoaiSP");
             return View();
@@ -54,11 +54,11 @@ namespace AppView.Controllers
             return View(LoaiSPs);
         }
         [HttpPost]
-        public async Task<IActionResult> Update(LoaiSP LoaiSP)
+        public async Task<IActionResult> Update(LoaiSP LoaiSP,Guid id)
         {
 
             var url =
-                $"https://localhost:7021/api/LoaiSP/5f63324c-c820-471d-9ca0-148f08a74f4c?ten={LoaiSP.Ten}";
+                $"https://localhost:7021/api/LoaiSP/{id}?ten={LoaiSP.Ten}&idLoaiSPCha={LoaiSP.IDLoaiSPCha}";
             var response = await httpClients.PutAsync(url, null);
             if (response.IsSuccessStatusCode) return RedirectToAction("GetAllLoaiSP");
 

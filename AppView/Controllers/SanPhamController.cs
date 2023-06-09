@@ -54,11 +54,11 @@ namespace AppView.Controllers
             return View(SanPhams);
         }
         [HttpPost]
-        public async Task<IActionResult> Update(SanPham sanpham)
+        public async Task<IActionResult> Update(SanPham sanpham,Guid id)
         {
 
             var url =
-                $"https://localhost:7021/api/SanPham/93343cd0-30b0-4700-8c93-16eee825cbd4?ten={sanpham.Ten}&idLoaiSP={sanpham.IDLoaiSP}&moTa={sanpham.MoTa}&trangthai={sanpham.TrangThai}";
+                $"https://localhost:7021/api/SanPham/{id}?ten={sanpham.Ten}&idLoaiSP={sanpham.IDLoaiSP}&moTa={sanpham.MoTa}&trangthai={sanpham.TrangThai}";
             var response = await httpClients.PutAsync(url, null);
             if (response.IsSuccessStatusCode) return RedirectToAction("GetAllSanPham");
 
