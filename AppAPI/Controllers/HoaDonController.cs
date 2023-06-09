@@ -36,7 +36,6 @@ namespace AppAPI.Controllers
         }
         // POST api/<HoaDonController>
         [HttpPost("Create-HoaDon")]
-        //DateTime ngayTao, DateTime? ngayThanhToan, string tenNguoiNhan, string sdt, string email, string diaChi, int tienShip, string phuongthucthanhtoan, int trangThaiGiaoHang, Guid? idNguoiDung, Guid? idVoucher
         public bool Post(HoaDon hoaDon)
         {
             return repos.Add(hoaDon);
