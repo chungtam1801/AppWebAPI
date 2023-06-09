@@ -33,24 +33,25 @@ namespace AppAPI.Controllers
 
         // POST api/<LoaiSPController>
         [HttpPost("create-loaisp")]
-        public bool Post(string ten,Guid? idLoaiSPCha)
+        public bool Post(string ten,Guid? idLoaiSPCha, int trangthai)
         {
             LoaiSP loaiSP = new LoaiSP();
             loaiSP.ID = Guid.NewGuid();
             loaiSP.Ten = ten;
             loaiSP.IDLoaiSPCha = idLoaiSPCha;
-            loaiSP.TrangThai = 1;
+            loaiSP.TrangThai = trangthai;
             return repos.Add(loaiSP);
         }
 
         // PUT api/<LoaiSPController>/5
         [HttpPut("{id}")]
-        public bool Put(Guid id, string ten, Guid? idLoaiSPCha)
+        public bool Put(Guid id, string ten, Guid? idLoaiSPCha, int trangthai)
         {
             var loaiSP = repos.GetAll().FirstOrDefault(x => x.ID == id);
             if (loaiSP != null)
             {
                 loaiSP.Ten = ten;
+                loaiSP.TrangThai= trangthai;
                 loaiSP.IDLoaiSPCha = idLoaiSPCha;
                 return repos.Update(loaiSP);
             }
