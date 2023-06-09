@@ -4,8 +4,8 @@
     {
         public void ThanhToan(Guid idGioHang)
         {
-            HttpClient client = new HttpClient();
-            string apiUrl 
+            //HttpClient client = new HttpClient();
+            //string apiUrl 
         }
     }
 }
