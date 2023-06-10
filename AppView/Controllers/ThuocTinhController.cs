@@ -34,13 +34,13 @@ namespace AppView.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> Create(ThuocTinh thuoctinh)
-        {
-            //var url = $"https://localhost:7021/api/ThuocTinh/Create_ThuocTinh?ten={thuoctinh.Ten}&ngaytao={thuoctinh.NgayTao}&trangthai={thuoctinh.TrangThai}";
-            //var response = await httpClients.PostAsync(url, null);
-            //if (response.IsSuccessStatusCode) return RedirectToAction("GetAllThuocTinh");
-            //return View();
-            repos.Add(thuoctinh);
-            return RedirectToAction("GetAllThuocTinh");
+        {DateTime ngaytao=thuoctinh.NgayTao;
+            var url = $"https://localhost:7021/api/ThuocTinh/Create_ThuocTinh?ten={thuoctinh.Ten}&ngaytao={ngaytao.ToString("MM-dd-yyyy")}&trangthai={thuoctinh.TrangThai}";
+            var response = await httpClients.PostAsync(url, null);
+            if (response.IsSuccessStatusCode) return RedirectToAction("GetAllThuocTinh");
+            return View();
+            //repos.Add(thuoctinh);
+            //return RedirectToAction("GetAllThuocTinh");
         }
         public async Task<IActionResult> Details(Guid id)
         {
@@ -55,36 +55,36 @@ namespace AppView.Controllers
         [HttpGet]
         public IActionResult Update(Guid id)
         {
-            //var url = $"https://localhost:7021/api/ThuocTinh/{id}";
-            //var response = httpClients.GetAsync(url).Result;
-            //var result = response.Content.ReadAsStringAsync().Result;
-            //var LoaiSPs = JsonConvert.DeserializeObject<ThuocTinh>(result);
-            //return View(LoaiSPs);
-            repos.GetAll().FirstOrDefault(x => x.ID == id);
-            return View();
+            var url = $"https://localhost:7021/api/ThuocTinh/{id}";
+            var response = httpClients.GetAsync(url).Result;
+            var result = response.Content.ReadAsStringAsync().Result;
+            var LoaiSPs = JsonConvert.DeserializeObject<ThuocTinh>(result);
+            return View(LoaiSPs);
+            //repos.GetAll().FirstOrDefault(x => x.ID == id);
+            //return View();
         }
         [HttpPost]
         public async Task<IActionResult> Update(ThuocTinh thuoctinh,Guid id)
         {
-            repos.Update(thuoctinh);
-            return RedirectToAction("GetAllThuocTinh");
+            //repos.Update(thuoctinh);
+            //return RedirectToAction("GetAllThuocTinh");
+            DateTime ngaytao = thuoctinh.NgayTao;
+            var url =
+                $"https://localhost:7021/api/ThuocTinh/Update-ThuocTinh?id={id}&ten={thuoctinh.Ten}&ngaytao={ngaytao.ToString("MM-dd-yyyy")}&trangthai={thuoctinh.TrangThai}";
+            var response = await httpClients.PutAsync(url, null);
+            if (response.IsSuccessStatusCode) return RedirectToAction("GetAllThuocTinh");
 
-            //var url =
-            //    $"https://localhost:7021/api/ThuocTinh/Update-ThuocTinh?id={id}&ten={thuoctinh.Ten}&ngaytao={thuoctinh.NgayTao}&trangthai={thuoctinh.TrangThai}";
-            //var response = await httpClients.PutAsync(url, null);
-            //if (response.IsSuccessStatusCode) return RedirectToAction("GetAllThuocTinh");
 
-
-            //return View();
+            return View();
         }
-        public async Task<IActionResult> Deletes(ThuocTinh p)
+        public async Task<IActionResult> Deletes(Guid id)
         {
-            repos.Delete(p);
-            return RedirectToAction("GetAllThuocTinh");
-            //var url = $"https://localhost:7021/api/ThuocTinhLoaiSP/{id}";
-            //var response = await httpClients.DeleteAsync(url);
-            //if (response.IsSuccessStatusCode) return RedirectToAction("GetAllThuocTinh");
-            //return BadRequest();
+            //repos.Delete(p);
+            //return RedirectToAction("GetAllThuocTinh");
+            var url = $"https://localhost:7021/api/ThuocTinhLoaiSP/{id}";
+            var response = await httpClients.DeleteAsync(url);
+            if (response.IsSuccessStatusCode) return RedirectToAction("GetAllThuocTinh");
+            return BadRequest();
         }
 
     }
