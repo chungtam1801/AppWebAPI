@@ -30,10 +30,23 @@
             @Html.DisplayFor(model => model.TrangThai)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IDLoaiSPCha)
+            Ten LoaiSP cha
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IDLoaiSPCha)
+            @{
+                AppData.Models.AssignmentDBContext dBContext = new AppData.Models.AssignmentDBContext();
+                var LoaiSP = dBContext.LoaiSPs.Find(Model.IDLoaiSPCha);
+                if (LoaiSP != null)
+                {
+                    <div>
+                        <strong style="color:red;">
+                            <span>
+                                @LoaiSP.Ten
+                            </span>
+                        </strong>
+                    </div>
+                }
+            }
         </dd>
     </dl>
 </div>

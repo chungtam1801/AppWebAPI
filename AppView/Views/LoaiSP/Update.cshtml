@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Update";
     Layout = "~/Views/Shared/_LayoutforAdmin.cshtml";
+    AppData.Models.AssignmentDBContext dBContext = new AppData.Models.AssignmentDBContext();
 }
 
 <h1>Update</h1>
@@ -29,9 +30,23 @@
                 <span asp-validation-for="TrangThai" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IDLoaiSPCha" class="control-label"></label>
-                <input asp-for="IDLoaiSPCha" class="form-control" />
-                <span asp-validation-for="IDLoaiSPCha" class="text-danger"></span>
+                <lable>Ten LoaiSP cha</lable>
+                <div>
+                    <select class="form-control" asp-for="IDLoaiSPCha">
+                        if (loaisp.IDLoaiSPCha == null)
+                        {
+                        <option value="">khong co ten cha</option>
+                        }
+                        @foreach (var loaisp in dBContext.LoaiSPs.ToList())
+                        {
+                           
+                            <option value="@loaisp.ID">@loaisp.Ten</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <br />
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
