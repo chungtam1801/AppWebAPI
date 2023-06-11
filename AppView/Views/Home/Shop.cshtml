@@ -44,12 +44,16 @@
                                 <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <div class="shop__sidebar__categories">
-                                            <ul class="nice-scroll">
-                                                @foreach (var item in listLoaiSP)
+                                            <div class="shop__sidebar__tags">
+                                               @* @foreach (var item in listLoaiSP)
                                                 {
-                                                    <li><a href="@item.ID" style="color:black; font-size:16px; margin-left:10px">@item.Ten</a></li>
-                                                }
-                                            </ul>
+                                                    if (item.IDLoaiSPCha == null)
+                                                    {
+                                                        <a href="@item.ID">@item.Ten</a>
+                                                    }
+                                                }*@
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
