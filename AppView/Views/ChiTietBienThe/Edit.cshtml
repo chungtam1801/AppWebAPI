@@ -42,7 +42,8 @@
                     <input asp-for="Ten" class="form-control" />
                     <span asp-validation-for="Ten" class="text-danger"></span>
                 </div>
-
+                
+                
                 <div class="form-group">
                     <label class="control-label">Mô Tả</label>
                     <input asp-for="MoTa" class="form-control" />
@@ -76,35 +77,9 @@
                 </div>
             </div>
 
-            <div class="col-4">
-                <lable>Thuộc tính sản phẩm</lable>
-
-                @foreach (var item in thuocTinhs)
-                {
-                    <div class="form-group">
-                        <lable>@item.Ten</lable>
-                        <div>
-
-                            <select class="form-control" name="IDGiaTri">
-                                @foreach (var gt in giaTris.FindAll(p => p.IdThuocTinh == item.ID))
-                                {
-                                    <option value="@gt.ID">@gt.Ten</option>
-
-                                }
-                            </select>
-                            <a asp-controller="GiaTri" asp-action="Create">Thêm giá trị cho thuộc tính</a>
-                        </div>
-                    </div>
-
-
-                }
-                <a asp-controller="ThuocTinh" asp-action="Create" style="color:red">Thêm thuộc tính</a>
-                <div class="form-group">
-                    <br />
-                </div>
-            </div>
+            
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input asp-route-IDBienThe="@Model.IDBienThe" asp-route-IDSanPham="@Model.IDSanPham" type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>

@@ -1,8 +1,10 @@
 ﻿using AppData.Models;
 using AppView.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 using Newtonsoft.Json;
 using NuGet.Protocol;
+using System.IO;
 
 namespace AppView.Controllers
 {
@@ -144,14 +146,25 @@ namespace AppView.Controllers
             //them bienthe
             if (Anh != null && Anh.Length > 0) // Kiểm tra đường dẫn phù hợp
             {
-                // thực hiện việc sao chép ảnh đó vào wwwroot
-                // Tạo đường dẫn tới thư mục sao chép (nằm trong root)
+                //check ảnh tồn tại trong folder chưa
                 var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot",
-                    "img", Anh.FileName); // abc/wwwroot/images/xxx.png
-                var stream = new FileStream(path, FileMode.Create); // Tạo 1 filestream để tạo mới
-                Anh.CopyTo(stream); // Copy ảnh vừa dc chọn vào đúng cái stream đó
-                // Gán lại giá trị link ảnh (lúc này đã nằm trong root cho thuộc tính description)
-                sanpham.Anh = Anh.FileName;
+                    "img", Anh.FileName);
+                if (!System.IO.File.Exists(path))
+                {
+                    // thực hiện việc sao chép ảnh đó vào wwwroot
+                    // Tạo đường dẫn tới thư mục sao chép (nằm trong root)
+                     // abc/wwwroot/images/xxx.
+                    var stream = new FileStream(path, FileMode.Create); // Tạo 1 filestream để tạo mới
+                    Anh.CopyTo(stream); // Copy ảnh vừa dc chọn vào đúng cái stream đó
+
+                    // Gán lại giá trị link ảnh (lúc này đã nằm trong root cho thuộc tính description)
+                    sanpham.Anh = Anh.FileName;
+                }
+                else
+                {
+                    sanpham.Anh = Anh.FileName;
+                }
+                    
             }
             
             DateTime ngaytao = sanpham.NgayTao;
@@ -256,31 +269,30 @@ namespace AppView.Controllers
             //update bienthe
             if (Anh != null && Anh.Length > 0) // Kiểm tra đường dẫn phù hợp
             {
-                // thực hiện việc sao chép ảnh đó vào wwwroot
-                // Tạo đường dẫn tới thư mục sao chép (nằm trong root)
+                //check ảnh tồn tại trong folder chưa
                 var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot",
-                    "img", Anh.FileName); // abc/wwwroot/images/xxx.png
-                var stream = new FileStream(path, FileMode.Create); // Tạo 1 filestream để tạo mới
+                    "img", Anh.FileName);
+                if (!System.IO.File.Exists(path))
+                {
+                    // thực hiện việc sao chép ảnh đó vào wwwroot
+                    // Tạo đường dẫn tới thư mục sao chép (nằm trong root)
+                    // abc/wwwroot/images/xxx.
+                    var stream = new FileStream(path, FileMode.Create); // Tạo 1 filestream để tạo mới
+                    Anh.CopyTo(stream); // Copy ảnh vừa dc chọn vào đúng cái stream đó
 
-                Anh.CopyTo(stream); // Copy ảnh vừa dc chọn vào đúng cái stream đó
-                // Gán lại giá trị link ảnh (lúc này đã nằm trong root cho thuộc tính description)
-                sanpham.Anh = Anh.FileName;
+                    // Gán lại giá trị link ảnh (lúc này đã nằm trong root cho thuộc tính description)
+                    sanpham.Anh = Anh.FileName;
+                }
+                else
+                {
+                    sanpham.Anh = Anh.FileName;
+                }
+
             }
             var urlbt =
                 $"https://localhost:7021/api/BienThe/{sanpham.IDBienThe}?IdSanPham={sanpham.IDSanPham}&SoLuong={sanpham.SoLuong}&GiaBan={sanpham.GiaBan}&NgayTao={sanpham.NgayTao.ToString("MM-dd-yyyy")}&Anh={sanpham.Anh}";
             var responsebt = await httpClients.PutAsync(urlbt, null);
 
-            //update chitietbt
-            foreach (var item in IDGiaTri)
-            {
-                var urlctbt =
-                $"https://localhost:7021/api/ChiTietBienThe/Update-CTBienThe?id={sanpham.IDChiTietBienThe}&idBienThe={sanpham.IDBienThe}&idGiaTri={item}&trangthai={sanpham.TrangThai}";
-                var responsectbt = await httpClients.PutAsync(urlctbt, null);
-
-                if (!responsectbt.IsSuccessStatusCode)
-                    return Content("loi ko sua ctbt");
-
-            }
             if (!responsesp.IsSuccessStatusCode)
             {
                 return Content("Khong sua dc sp");
