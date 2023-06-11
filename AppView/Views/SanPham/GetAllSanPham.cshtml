@@ -36,7 +36,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @stt
+                    @stt
+                    @{
+                        stt++;
+                    }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ten)

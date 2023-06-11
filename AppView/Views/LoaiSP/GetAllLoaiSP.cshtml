@@ -33,7 +33,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @stt;
+                    @stt
+                    @{
+                        stt++;
+                    }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ten)
@@ -47,13 +50,13 @@
                         var LoaiSP = dBContext.LoaiSPs.Find(item.IDLoaiSPCha);
                         if (LoaiSP != null)
                         {
-                                    <div>
-                                        <strong style="color:red;">
-                                            <span>
-                                                @LoaiSP.Ten
-                                            </span>
-                                        </strong>
-                                    </div>
+                                        <div>
+                                            <strong style="color:red;">
+                                                <span>
+                                                    @LoaiSP.Ten
+                                                </span>
+                                            </strong>
+                                        </div>
                         }
                     }
             </td>
