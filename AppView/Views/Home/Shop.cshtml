@@ -30,10 +30,14 @@
             <div class="col-lg-3">
                 <div class="shop__sidebar">
                     <div class="shop__sidebar__search">
-                        <form action="#">
-                            <input type="text" placeholder="Search...">
-                            <button type="submit"><span class="icon_search"></span></button>
+                        <form action="TimKiemSanPham">
+                            @using (Html.BeginForm("TimKiemSanPham", "Home", FormMethod.Get))
+                            {
+                                <input type="text" placeholder="Tìm kiếm theo tên..." name="ten">
+                                <button type="submit"><span class="icon_search"></span></button>
+                            }
                         </form>
+
                     </div>
                     <div class="shop__sidebar__accordion">
                         <div class="accordion" id="accordionExample">
@@ -45,13 +49,12 @@
                                     <div class="card-body">
                                         <div class="shop__sidebar__categories">
                                             <div class="shop__sidebar__tags">
-                                               @* @foreach (var item in listLoaiSP)
+                                                @foreach (var item in listLoaiSP)
                                                 {
-                                                    if (item.IDLoaiSPCha == null)
-                                                    {
-                                                        <a href="@item.ID">@item.Ten</a>
-                                                    }
-                                                }*@
+
+                                                    <a href="/Home/LocLoaiSP/@item.ID">@item.Ten</a>
+
+                                                }
                                             </div>
 
                                         </div>
@@ -66,12 +69,12 @@
                                     <div class="card-body">
                                         <div class="shop__sidebar__price">
                                             <ul>
-                                                <li><a href="#">$0.00 - $50.00</a></li>
-                                                <li><a href="#">$50.00 - $100.00</a></li>
-                                                <li><a href="#">$100.00 - $150.00</a></li>
-                                                <li><a href="#">$150.00 - $200.00</a></li>
-                                                <li><a href="#">$200.00 - $250.00</a></li>
-                                                <li><a href="#">250.00+</a></li>
+                                                <li><a href="#">Dưới 100.000 VNĐ</a></li>
+                                                <li><a href="#">100.000 - 200.000 VNĐ</a></li>
+                                                <li><a href="#">200.000 - 300.000 VNĐ</a></li>
+                                                <li><a href="#">300.000 - 400.000 VNĐ</a></li>
+                                                <li><a href="#">400.000 - 500.000 VNĐ</a></li>
+                                                <li><a href="#">Trên 500.000 VNĐ</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -176,18 +179,18 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="shop__product__option__left">
-                                <p>Showing 1–12 of 126 results</p>
+                                <p>Showing @Model.Count() result</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="shop__product__option__right">
+                            @*<div class="shop__product__option__right">
                                 <p>Sort by Price:</p>
                                 <select>
                                     <option value="">Low To High</option>
                                     <option value="">$0 - $55</option>
                                     <option value="">$55 - $100</option>
                                 </select>
-                            </div>
+                            </div>*@
                         </div>
                     </div>
                 </div>
@@ -197,7 +200,8 @@
                         var bthe = listbt.Where(c => c.IDSanPham.Equals(item.ID)).FirstOrDefault();
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="/img/product/product-2.jpg">
+                                <div class="product__item__pic set-bg">
+                                    <img src="/img/@bthe.Anh">
                                 </div>
                                 <div class="product__item__text">
                                     <h6>@item.Ten</h6>

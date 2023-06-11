@@ -3,10 +3,10 @@
 
 @{
     ViewData["Title"] = "ShowCart";
-    AssignmentDBContext context = new AssignmentDBContext();
+    var listbt = ViewData["listBienThe"] as List<BienThe>;
+    var listSP = ViewData["listSP"] as List<SanPham>;
     long tongTien = 0;
     int tongSL = 0;
-    //int index = 0;
 
 }
 <!-- Breadcrumb Section Begin -->
@@ -45,8 +45,8 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                                BienThe bthe = context.BienThes.Where(c => c.ID.Equals(item.IDBienThe)).FirstOrDefault();
-                                SanPham spham = context.SanPhams.Where(c => c.ID.Equals(bthe.IDSanPham)).FirstOrDefault();
+                                BienThe bthe = listbt.Where(c => c.ID.Equals(item.IDBienThe)).FirstOrDefault();
+                                SanPham spham = listSP.Where(c => c.ID.Equals(bthe.IDSanPham)).FirstOrDefault();
                                 if (bthe != null)
                                 {
                                     var thanhtien = item.SoLuong * bthe.GiaBan;
@@ -55,10 +55,10 @@
                                         @using (Html.BeginForm("Update_Quantity", "GioHang"))
                                         {
                                             <td class="product__cart__item">
-                                                <div class="product__cart__item__pic">
-                                                    <img src="/img/shopping-cart/cart-1.jpg" alt="">
+                                                <div>
+                                                    <img src="/img/@bthe.Anh" style="width:30%;height: 30%; float:left">
                                                 </div>
-                                                <div class="product__cart__item__text">
+                                                <div class="product__cart__item__text" >
                                                     <h6>@spham.Ten</h6>
                                                     <h5>@bthe.GiaBan.ToString("n0") VND</h5>
                                                 </div>
@@ -84,7 +84,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="continue__btn">
-                            <a href="/Home/Shop">Continue Shopping</a>
+                            <a href="/Home/AllProduct">Continue Shopping</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">

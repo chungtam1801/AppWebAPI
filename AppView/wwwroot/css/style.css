@@ -2319,19 +2319,19 @@ ol {
 	padding-top: 30px;
 }
 
-.shopping__cart__table table tbody tr td.product__cart__item {
-	width: 400px;
-}
+	.shopping__cart__table table tbody tr td.product__cart__item {
+		width: 350px;
+	}
 
-.shopping__cart__table table tbody tr td.product__cart__item .product__cart__item__pic {
-	float: left;
-	margin-right: 30px;
-}
+		.shopping__cart__table table tbody tr td.product__cart__item .product__cart__item__pic {
+			float: left;
+		}
 
-.shopping__cart__table table tbody tr td.product__cart__item .product__cart__item__text {
-	overflow: hidden;
-	padding-top: 21px;
-}
+		.shopping__cart__table table tbody tr td.product__cart__item .product__cart__item__text {
+			overflow: hidden;
+			padding-top: 21px;
+			padding-left: 21px;
+		}
 
 .shopping__cart__table table tbody tr td.product__cart__item .product__cart__item__text h6 {
 	color: #111111;

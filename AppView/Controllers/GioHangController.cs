@@ -45,6 +45,40 @@ namespace AppView.Controllers
             }
 
         }
+        public List<LoaiSP> LoadLoaiSP()
+        {
+            HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + "/LoaiSP").Result;
+            List<LoaiSP> ListLoaiSP = new List<LoaiSP>();
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                ListLoaiSP = JsonConvert.DeserializeObject<List<LoaiSP>>(data);
+            }
+
+            return ListLoaiSP.ToList();
+        }
+        public List<SanPham> LoadSP()
+        {
+            HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + "/SanPham").Result;
+            List<SanPham> listSP = new List<SanPham>();
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                listSP = JsonConvert.DeserializeObject<List<SanPham>>(data);
+            }
+            return listSP.ToList();
+        }
+        public List<BienThe> LoadBThe()
+        {
+            HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + "/BienThe").Result;
+            List<BienThe> listBT = new List<BienThe>();
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                listBT = JsonConvert.DeserializeObject<List<BienThe>>(data);
+            }
+            return listBT.ToList();
+        }
         // HIỂN THỊ SẢN PHẨM TRONG GIỎ HÀNG
         public IActionResult ShowCart()
         {
@@ -56,6 +90,8 @@ namespace AppView.Controllers
                 {
                     TempData["Message"] = "Không có sản phẩm nào trong giỏ hàng!";
                 }
+                ViewData["listBienThe"] = LoadBThe();
+                ViewData["listSP"] = LoadSP();
                 return View(products);
             }
             else // Lấy toàn bộ chitietgiohang của người dùng 
@@ -128,11 +164,8 @@ namespace AppView.Controllers
                         IDBienThe = product.ID,
                         SoLuong = 1,
                     };
-                    _context.ChiTietGioHangs.Add(cartitem);
-                    _context.SaveChanges();
-                    //string data = JsonConvert.SerializeObject(cartitem);
-                    //StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
-                    //HttpResponseMessage response = _httpClient.PostAsync(_httpClient.BaseAddress + "/ChiTietGioHang/Create-CTGioHang", content).Result;
+                    var url = $"https://localhost:7021/api/ChiTietGioHang/create-chi-tiet-gio-hang?IdBienthe={cartitem.IDBienThe}&IdNguoiDung={cartitem.IDNguoiDung}&soluong={cartitem.SoLuong}";
+                    var response = await _httpClient.PostAsync(url, null);
                 }
                 else // Không rỗng thì ktra có chứa sản phẩm đấy không
                 {
@@ -144,28 +177,23 @@ namespace AppView.Controllers
                             IDBienThe = product.ID,
                             SoLuong = 1,
                         };
-                        _context.ChiTietGioHangs.Add(cartitem);
-                        _context.SaveChanges();
-                        //string data = JsonConvert.SerializeObject(cartitem);
-                        //StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
-                        //HttpResponseMessage response = _httpClient.PostAsync(_httpClient.BaseAddress + "/ChiTietGioHang/Create-CTGioHang", content).Result;
+                        var url = $"https://localhost:7021/api/ChiTietGioHang/create-chi-tiet-gio-hang?IdBienthe={cartitem.IDBienThe}&IdNguoiDung={cartitem.IDNguoiDung}&soluong={cartitem.SoLuong}";
+                        var response = await _httpClient.PostAsync(url, null);
                     }
                     else // Nếu đã có sản phẩm trong giỏ rồi thì tăng số lượng lên 1
                     {
                         var cartitem = cartDetailList.Where(c => c.IDBienThe == id).FirstOrDefault();
                         cartitem.SoLuong++;
-                        _context.ChiTietGioHangs.Update(cartitem);
-                        _context.SaveChanges();
-                        //string data = JsonConvert.SerializeObject(cartitem);
-                        //StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
-                        //HttpResponseMessage response = _httpClient.PutAsync(_httpClient.BaseAddress + "/ChiTietGioHang/Update-CTGioHang", content).Result;
+                        var url = $"https://localhost:7021/api/ChiTietGioHang/{cartitem.ID}?IdBienthe={cartitem.IDBienThe}&IdNguoiDung={cartitem.IDNguoiDung}&soluong={cartitem.SoLuong}";
+                        var response = await _httpClient.PutAsync(url, null);
+                        
                     }
                 }
             }
             return RedirectToAction("ShowCart");
         }
         // CẬP NHẬT GIỎ HÀNG
-        public IActionResult Update_Quantity(IFormCollection f)
+        public async Task<IActionResult> Update_Quantity(IFormCollection f)
         {
             var countsp = listBT.Where(c=> c.ID == Guid.Parse(f["ID_product"].ToString())).FirstOrDefault(); // Sản phẩm bị sửa
             Guid id = Guid.Parse(f["ID_product"].ToString()); // Lấy id sp bị chỉnh sửa trong giỏ
@@ -177,11 +205,9 @@ namespace AppView.Controllers
 
                 if (int.Parse(f["Quantity"].ToString()) == 0) // bằng 0 thì xóa luôn
                 {
-                    var x = cartDetailList.Where(c => c.ID == id).FirstOrDefault();
-                    HttpResponseMessage response = _httpClient.DeleteAsync(_httpClient.BaseAddress + "/ChiTietGioHang/Delete-CTGioHang?id=" + id.ToString()).Result;
-                    //_context.ChiTietGioHangs.Remove(x);
-                    //_context.SaveChanges();
-
+                    var x = cartDetailList.Where(c => c.IDBienThe == id).FirstOrDefault();
+                    var url = $"https://localhost:7021/api/ChiTietGioHang/{x.ID}";
+                    var response = await _httpClient.DeleteAsync(url);
                 }
                 else if (int.Parse(f["Quantity"].ToString()) > countsp.SoLuong) // Lớn hơn thì thông báo
                 {
@@ -192,8 +218,9 @@ namespace AppView.Controllers
                 { // cập nhật vào giỏ hàng
                     var x = cartDetailList.Where(c => c.IDBienThe == id).FirstOrDefault();
                     x.SoLuong = int.Parse(f["Quantity"].ToString());
-                    _context.Update(x);
-                    _context.SaveChanges();
+                    var url = $"https://localhost:7021/api/ChiTietGioHang/{x.ID}?IdBienthe={x.IDBienThe}&IdNguoiDung={x.IDNguoiDung}&soluong={x.SoLuong}";
+                    var response = await _httpClient.PutAsync(url, null);
+
                 }
                 return RedirectToAction("ShowCart");
             }
@@ -220,7 +247,7 @@ namespace AppView.Controllers
             }
         }
         // XÓA SẢN PHẨM TRONG GIỎ HÀNG
-        public IActionResult RemoveAll()
+        public async Task<IActionResult> RemoveAll()
         {
             if (HttpContext.Session.GetString("IdUser") != null)// đã đăng nhập
             {
@@ -228,8 +255,8 @@ namespace AppView.Controllers
                 var cartDetailList = listCTGH.Where(c => c.IDNguoiDung == iduser).ToList();// Lấy cartitem trong CSDL của người dùng 
                 for (int i = 0; i < cartDetailList.Count; i++)
                 {
-                    _context.ChiTietGioHangs.Remove(cartDetailList[i]);
-                    _context.SaveChanges();
+                    var url = $"https://localhost:7021/api/ChiTietGioHang/{cartDetailList[i].ID}";
+                    var response = await _httpClient.DeleteAsync(url);
                 }
                 return RedirectToAction("ShowCart");
             }
@@ -239,15 +266,16 @@ namespace AppView.Controllers
                 return RedirectToAction("ShowCart");
             }
         }
-        public IActionResult RemoveCartItem(Guid id)
+        public async Task<IActionResult> RemoveCartItem(Guid id)
         {
             if (HttpContext.Session.GetString("IdUser") != null)// đã đăng nhập
             {
                 Guid iduser = Guid.Parse(HttpContext.Session.GetString("IdUser"));
                 var cartDetailList = listCTGH.Where(c => c.IDNguoiDung == iduser).ToList();// Lấy cartitem trong CSDL của người dùng 
                 ChiTietGioHang cartItem = cartDetailList.Where(c => c.IDBienThe == id).FirstOrDefault();
-                _context.ChiTietGioHangs.Remove(cartItem);
-                _context.SaveChanges();
+
+                var url = $"https://localhost:7021/api/ChiTietGioHang/{cartItem.ID}";
+                var response = await _httpClient.DeleteAsync(url);
                 return RedirectToAction("ShowCart");
             }
             else
