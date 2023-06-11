@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\ASS_105\\AppView\\AppView.csproj": {}
+    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\AppView.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\ASS_105\\AppAPI\\AppAPI.csproj": {
+    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\ASS_105\\AppAPI\\AppAPI.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj",
         "projectName": "AppAPI",
-        "projectPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppAPI\\AppAPI.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppAPI\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Desktop\\ASS_105\\AppData\\AppData.csproj": {
-                "projectPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppData\\AppData.csproj"
+              "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj"
               }
             }
           }
@@ -67,8 +67,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,24 +79,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Desktop\\ASS_105\\AppData\\AppData.csproj": {
+    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\ASS_105\\AppData\\AppData.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj",
         "projectName": "AppData",
-        "projectPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppData\\AppData.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppData\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -149,8 +148,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -159,24 +157,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Desktop\\ASS_105\\AppView\\AppView.csproj": {
+    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\AppView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\ASS_105\\AppView\\AppView.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\AppView.csproj",
         "projectName": "AppView",
-        "projectPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppView\\AppView.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\AppView.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppView\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -191,11 +189,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Desktop\\ASS_105\\AppAPI\\AppAPI.csproj": {
-                "projectPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppAPI\\AppAPI.csproj"
+              "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj"
               },
-              "C:\\Users\\HP\\Desktop\\ASS_105\\AppData\\AppData.csproj": {
-                "projectPath": "C:\\Users\\HP\\Desktop\\ASS_105\\AppData\\AppData.csproj"
+              "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj"
               }
             }
           }
@@ -235,8 +233,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -248,7 +245,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
