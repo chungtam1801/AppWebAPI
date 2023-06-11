@@ -213,7 +213,7 @@ namespace AppView.Controllers
         }
         public async Task<IActionResult> Deletes(Guid id)
         {
-            var url = $"https://localhost:7021/api/ChiTietBienThe/{id}";
+            var url = $"https://localhost:7021/api/BienThe/{id}";
             var response = await httpClients.DeleteAsync(url);
             if (response.IsSuccessStatusCode) return RedirectToAction("GetAllChiTietBienThe");
             return BadRequest();
