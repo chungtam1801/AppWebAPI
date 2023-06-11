@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iIVnqFaskJO9sxWXjPhsEFRCS1HDgfjM90gcJtwgmu8=",
+  "Hash": "8zzogiel6TCfUFU0nrIa8pQl0kljeJUEhiAh9YNuGSI=",
   "Source": "AppView",
   "BasePath": "_content/AppView",
   "Mode": "Default",
@@ -1542,6 +1542,23 @@
       "OriginalItemSpec": "wwwroot\\img\\product-12.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\wwwroot\\img\\product-13.jpg",
+      "SourceId": "AppView",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/product-13.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-13.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\wwwroot\\img\\product-2.jpg",
       "SourceId": "AppView",
       "SourceType": "Discovered",
@@ -1574,6 +1591,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\product-4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\wwwroot\\img\\product-5.jpg",
+      "SourceId": "AppView",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/product-5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\wwwroot\\img\\product-6.jpg",
+      "SourceId": "AppView",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/product-6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-6.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\wwwroot\\img\\product-8.jpg",
