@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<AppData.Models.ThuocTinhLoaiSP>
 
 @{
+    Layout = "~/Views/Shared/_LayoutforAdmin.cshtml";
     ViewData["Title"] = "GetAllThuocTinhLoaiSP";
     AppData.Models.AssignmentDBContext dBContext = new AppData.Models.AssignmentDBContext();
 }
