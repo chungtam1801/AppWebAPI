@@ -1,31 +1,34 @@
 ﻿using AppData.Models;
 using Microsoft.AspNetCore.Mvc;
-using AppView.IServices;
-using AppView.Services;
 using Newtonsoft.Json;
+using AppData.ViewModels;
 
 namespace AppView.Controllers
 {
     public class ThanhToanController : Controller
     {
-        private readonly IHoaDonService _iHoaDonService;
+        private readonly HttpClient _httpClient;
         public ThanhToanController()
         {
-            _iHoaDonService = new HoaDonService();
+            _httpClient = new HttpClient();
         }
-        public IActionResult GetAllHoaDonAsync()
+        public async Task<IActionResult> GetAllHoaDonAsync()
         {
-            List<HoaDon>? lst = _iHoaDonService.GetAllHoaDonAsync();
-            return View();
+            string apiUrl = "https://localhost:7021/api/HoaDon";
+            var response = await _httpClient.GetAsync(apiUrl);
+            string apiData = await response.Content.ReadAsStringAsync();
+            var sanPhams = JsonConvert.DeserializeObject<List<HoaDon>>(apiData);
+            return View(sanPhams);
         }
-        public IActionResult Payment(Guid idGioHang)
+        [HttpPost]
+        public async Task<IActionResult> CreateHoaDonAsync(HoaDonViewModel hoaDonViewModel)
         {
-            //HttpClient httpClient = new HttpClient();
-            //string apiUrl = "https://localhost:7021/api/HoaDon";
-            //var response = await httpClient.GetAsync(apiUrl);
-            //string apiData = await response.Content.ReadAsStringAsync();
-            //var SanPhams = JsonConvert.DeserializeObject<List<HoaDon>>(apiData);
-            return View();
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7021/api/HoaDon/create-hoaDon",hoaDonViewModel);
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else return BadRequest();
         }
     }
 }
