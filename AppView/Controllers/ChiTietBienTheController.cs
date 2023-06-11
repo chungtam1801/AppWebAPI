@@ -176,6 +176,24 @@ namespace AppView.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
         {
+            //ctbt
+            string apiUrlCTBT = "https://localhost:7021/api/ChiTietBienThe";
+            var responseCTBT = await httpClients.GetAsync(apiUrlCTBT);
+            string apiDataCTBT = await responseCTBT.Content.ReadAsStringAsync();
+            var CTBienThe = JsonConvert.DeserializeObject<List<ChiTietBienThe>>(apiDataCTBT);
+            ViewBag.CTBienThe = CTBienThe;
+            // LoaiSP
+            string apiUrlLoaiSP = "https://localhost:7021/api/LoaiSP";
+            var responseLoaiSP = await httpClients.GetAsync(apiUrlLoaiSP);
+            string apiDataLoaiSP = await responseLoaiSP.Content.ReadAsStringAsync();
+            var loaiSP = JsonConvert.DeserializeObject<List<LoaiSP>>(apiDataLoaiSP);
+            ViewBag.LoaiSP = loaiSP;
+            // ThuocTinh
+            string apiUrlThuocTinh = "https://localhost:7021/api/ThuocTinh";
+            var responseThuocTinh = await httpClients.GetAsync(apiUrlThuocTinh);
+            string apiDataThuocTinh = await responseThuocTinh.Content.ReadAsStringAsync();
+            var thuocTinh = JsonConvert.DeserializeObject<List<ThuocTinh>>(apiDataThuocTinh);
+            ViewBag.ThuocTinh = thuocTinh;
             //Giatri getall
             string apiUrlGiaTri = "https://localhost:7021/api/GiaTri";
             var responseGT = await httpClients.GetAsync(apiUrlGiaTri);
@@ -194,27 +212,103 @@ namespace AppView.Controllers
             string apiDatasp = await responsesp.Content.ReadAsStringAsync();
             var SanPham = JsonConvert.DeserializeObject<List<SanPham>>(apiDatasp);
             ViewBag.SanPham = SanPham;
+            //
+            
 
-            var url = $"https://localhost:7021/api/ChiTietBienThe/{id}";
-            var response = httpClients.GetAsync(url).Result;
-            var result = response.Content.ReadAsStringAsync().Result;
-            var CTBT = JsonConvert.DeserializeObject<ChiTietBienThe>(result);
-            return View(CTBT);
+            //var url = $"https://localhost:7021/api/ChiTietBienThe/{id}";
+            //var response = httpClients.GetAsync(url).Result;
+            //var result = response.Content.ReadAsStringAsync().Result;
+            //var CTBT = JsonConvert.DeserializeObject<ChiTietBienThe>(result);
+
+            string apiUrlBThe = $"https://localhost:7021/api/BienThe/{id}";
+            var responseBThe = await httpClients.GetAsync(apiUrlBThe);
+            string apiDataBThe = await responseBThe.Content.ReadAsStringAsync();
+            var BienThebt = JsonConvert.DeserializeObject<BienThe>(apiDataBThe);
+            
+            string apiUrlSP = $"https://localhost:7021/api/SanPham/{BienThebt.IDSanPham}";
+            var responseSP = await httpClients.GetAsync(apiUrlSP);
+            string apiDataSP = await responseSP.Content.ReadAsStringAsync();
+            var SP = JsonConvert.DeserializeObject<SanPham>(apiDataSP);
+
+            AllSanPhamBienTheViewModel allSanPhamBienTheViewModel = new AllSanPhamBienTheViewModel();
+            allSanPhamBienTheViewModel.IDBienThe = BienThebt.ID;
+            allSanPhamBienTheViewModel.IDSanPham = SP.ID;
+            allSanPhamBienTheViewModel.Ten = SP.Ten;
+            allSanPhamBienTheViewModel.SoLuong= BienThebt.SoLuong;
+            allSanPhamBienTheViewModel.GiaBan = BienThebt.GiaBan;
+            allSanPhamBienTheViewModel.NgayTao = BienThebt.NgayTao;
+            allSanPhamBienTheViewModel.TrangThai = BienThebt.TrangThai;
+            allSanPhamBienTheViewModel.Anh = BienThebt.Anh;
+            allSanPhamBienTheViewModel.MoTa = SP.MoTa;
+            
+
+            return View(allSanPhamBienTheViewModel);
         }
         [HttpPost]
-        public async Task<IActionResult> Edit(ChiTietBienThe CTBT)
+        public async Task<IActionResult> Edit(AllSanPhamBienTheViewModel sanpham, IFormFile Anh, List<Guid> IDGiaTri)
         {
 
-            var url =
-                $"https://localhost:7021/api/ChiTietBienThe/Update-CTBienThe?id={CTBT.ID}&idBienThe={CTBT.IDBienThe}&idGiaTri={CTBT.IDGiaTri}&trangthai={CTBT.TrangThai}";
-            var response = await httpClients.PutAsync(url, null);
-            if (response.IsSuccessStatusCode) return RedirectToAction("GetAllChiTietBienThe");
-            return View();
+            
+            //update sp
+            var urlsp =
+                $"https://localhost:7021/api/SanPham/{sanpham.IDSanPham}?ten={sanpham.Ten}&idLoaiSP={sanpham.IDLoaiSP}&moTa={sanpham.MoTa}&trangthai={sanpham.TrangThai}";
+            var responsesp = await httpClients.PutAsync(urlsp, null);
+            //update bienthe
+            if (Anh != null && Anh.Length > 0) // Kiểm tra đường dẫn phù hợp
+            {
+                // thực hiện việc sao chép ảnh đó vào wwwroot
+                // Tạo đường dẫn tới thư mục sao chép (nằm trong root)
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot",
+                    "img", Anh.FileName); // abc/wwwroot/images/xxx.png
+                var stream = new FileStream(path, FileMode.Create); // Tạo 1 filestream để tạo mới
+
+                Anh.CopyTo(stream); // Copy ảnh vừa dc chọn vào đúng cái stream đó
+                // Gán lại giá trị link ảnh (lúc này đã nằm trong root cho thuộc tính description)
+                sanpham.Anh = Anh.FileName;
+            }
+            var urlbt =
+                $"https://localhost:7021/api/BienThe/{sanpham.IDBienThe}?IdSanPham={sanpham.IDSanPham}&SoLuong={sanpham.SoLuong}&GiaBan={sanpham.GiaBan}&NgayTao={sanpham.NgayTao.ToString("MM-dd-yyyy")}&Anh={sanpham.Anh}";
+            var responsebt = await httpClients.PutAsync(urlbt, null);
+
+            //update chitietbt
+            foreach (var item in IDGiaTri)
+            {
+                var urlctbt =
+                $"https://localhost:7021/api/ChiTietBienThe/Update-CTBienThe?id={sanpham.IDChiTietBienThe}&idBienThe={sanpham.IDBienThe}&idGiaTri={item}&trangthai={sanpham.TrangThai}";
+                var responsectbt = await httpClients.PutAsync(urlctbt, null);
+
+                if (!responsectbt.IsSuccessStatusCode)
+                    return Content("loi ko sua ctbt");
+
+            }
+            if (!responsesp.IsSuccessStatusCode)
+            {
+                return Content("Khong sua dc sp");
+            }
+            if (!responsebt.IsSuccessStatusCode)
+            {
+                return Content("Khong sua dc bt");
+            }
+            return RedirectToAction("GetAllChiTietBienThe");
+            
         }
         public async Task<IActionResult> Deletes(Guid id)
         {
+            string apiUrlBThe = $"https://localhost:7021/api/BienThe/{id}";
+            var responseBThe = await httpClients.GetAsync(apiUrlBThe);
+            string apiDataBThe = await responseBThe.Content.ReadAsStringAsync();
+            var BienThebt = JsonConvert.DeserializeObject<BienThe>(apiDataBThe);
+
+            string apiUrlSP = $"https://localhost:7021/api/SanPham/{BienThebt.IDSanPham}";
+            var responseSP = await httpClients.GetAsync(apiUrlSP);
+            string apiDataSP = await responseSP.Content.ReadAsStringAsync();
+            var SP = JsonConvert.DeserializeObject<SanPham>(apiDataSP);
+
             var url = $"https://localhost:7021/api/BienThe/{id}";
             var response = await httpClients.DeleteAsync(url);
+
+            var urlsp = $"https://localhost:7021/api/SanPham/{BienThebt.IDSanPham}";
+            var responsesp = await httpClients.DeleteAsync(url);
             if (response.IsSuccessStatusCode) return RedirectToAction("GetAllChiTietBienThe");
             return BadRequest();
         }

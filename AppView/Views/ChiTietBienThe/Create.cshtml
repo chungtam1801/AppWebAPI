@@ -10,9 +10,8 @@
     List<ThuocTinh> thuocTinhs = ViewBag.ThuocTinh;
     List<LoaiSP> loaiSPs = ViewBag.LoaiSP;
     List<ChiTietBienThe> chiTietBienThes = ViewBag.CTBienThe;
-    List<Guid> idgiatri = null;
-    ViewBag.IDgiatri = idgiatri;
-    int stt = 0;
+    
+    
 }
 
 <h1>Tạo sản phẩm</h1>
@@ -98,7 +97,7 @@
                             <a asp-controller="GiaTri" asp-action="Create">Thêm giá trị cho thuộc tính</a>
                         </div>
                     </div>
-                    stt++;
+                   
 
                 }
                 <a asp-controller="ThuocTinh" asp-action="Create" style="color:red">Thêm thuộc tính</a>
