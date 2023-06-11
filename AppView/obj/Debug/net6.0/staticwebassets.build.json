@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6FtkxWm42VnW/K5ymRzJo1OePBBYEd428q20igZJLsI=",
+  "Hash": "pItDcvEuCQrNADGeb/diScuRxn6zVMkAMHzHYCnQpcI=",
   "Source": "AppView",
   "BasePath": "_content/AppView",
   "Mode": "Default",
@@ -129,23 +129,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\magnific-popup.css"
-    },
-    {
-      "Identity": "D:\\Cshap 5 kì 6\\ASMCuoiMon\\AppWebAPI\\AppView\\wwwroot\\css\\nice-select.css",
-      "SourceId": "AppView",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Cshap 5 kì 6\\ASMCuoiMon\\AppWebAPI\\AppView\\wwwroot\\",
-      "BasePath": "_content/AppView",
-      "RelativePath": "css/nice-select.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\nice-select.css"
     },
     {
       "Identity": "D:\\Cshap 5 kì 6\\ASMCuoiMon\\AppWebAPI\\AppView\\wwwroot\\css\\owl.carousel.min.css",
