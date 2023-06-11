@@ -1431,7 +1431,7 @@ ol {
 
 .shop__product__option__right .nice-select {
 	float: none;
-	display: inline-block;
+	display: none;
 	padding: 0;
 	line-height: 26px;
 	height: auto;
@@ -2530,6 +2530,9 @@ ol {
 	border-bottom: 1px solid #e1e1e1;
 	padding-bottom: 25px;
 	margin-bottom: 30px;
+}
+.checkout__input select{
+	display : block !important;
 }
 
 .checkout__input {
