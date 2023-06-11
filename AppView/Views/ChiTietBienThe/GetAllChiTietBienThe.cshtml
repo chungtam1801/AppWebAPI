@@ -1,0 +1,58 @@
+﻿@using AppData.Models;
+@model IEnumerable<AppData.Models.ChiTietBienThe>
+
+@{
+    Layout = "~/Views/Shared/_LayoutforAdmin.cshtml";
+    ViewData["Title"] = "GetAllChiTietBienThe";
+    List<GiaTri> giaTris = ViewBag.GiaTri;
+    List<BienThe> bienThes = ViewBag.BienThe;
+    List<SanPham> sanPhams = ViewBag.SanPham;
+    int stt = 1;
+}
+
+<h1>GetAllChiTietBienThe</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                STT
+            </th>
+            
+            <th>
+                Tên sản phẩm
+            </th>
+            <th>
+                Tên giá trị
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @stt
+            </td>
+            
+            <td>
+                @sanPhams.FirstOrDefault(p=>p.ID == bienThes.FirstOrDefault(p=>p.ID == item.IDBienThe).IDSanPham).Ten
+            </td>
+            <td>
+                @giaTris.FirstOrDefault(p=>p.ID == item.IDGiaTri).Ten
+            </td>
+                @{
+                    stt++;
+                }
+                <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.ID  }) |
+                
+                @Html.ActionLink("Delete", "Deletes", new {  id=item.ID  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

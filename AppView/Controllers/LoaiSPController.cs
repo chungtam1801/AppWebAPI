@@ -29,6 +29,7 @@ namespace AppView.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(LoaiSP loaiSP )
         {
+      
             var url = $"https://localhost:7021/api/LoaiSP/create-loaisp?ten={loaiSP.Ten}&idLoaiSPCha={loaiSP.IDLoaiSPCha}&trangthai={loaiSP.TrangThai}";
             var response = await httpClients.PostAsync(url, null);
             if (response.IsSuccessStatusCode) return RedirectToAction("GetAllLoaiSP");

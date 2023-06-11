@@ -23,7 +23,7 @@
                 @Html.DisplayNameFor(model => model.TrangThai)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IDLoaiSPCha)
+                Ten LoaiSP cha
             </th>
             <th></th>
         </tr>
@@ -41,7 +41,20 @@
                 @Html.DisplayFor(modelItem => item.TrangThai)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IDLoaiSPCha)
+                    @{
+                        AppData.Models.AssignmentDBContext dBContext = new AppData.Models.AssignmentDBContext();
+                        var LoaiSP = dBContext.LoaiSPs.Find(item.IDLoaiSPCha);
+                        if (LoaiSP != null)
+                        {
+                            <div>
+                                <strong style="color:red;">
+                                    <span>
+                                        @LoaiSP.Ten
+                                    </span>
+                                </strong>
+                            </div>
+                        }
+                    }
             </td>
             <td>
                 @Html.ActionLink("Edit", "Update", new { id=item.ID }) |
