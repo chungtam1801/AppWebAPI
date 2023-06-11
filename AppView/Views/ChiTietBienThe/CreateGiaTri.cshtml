@@ -1,0 +1,48 @@
+﻿@using AppData.Models;
+@model AppData.Models.GiaTri
+
+@{
+    Layout = "~/Views/Shared/_LayoutforAdmin.cshtml";
+    ViewData["Title"] = "CreateGiaTri";
+    AppData.Models.AssignmentDBContext dBContext = new AssignmentDBContext();
+}
+
+<h1>Create</h1>
+
+<h4>GiaTri</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="ChiTietBienThe" asp-action="CreateGiaTri">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Ten" class="control-label"></label>
+                <input asp-for="Ten" class="form-control" />
+                <span asp-validation-for="Ten" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <lable>Ten ThuocTinh</lable>
+                <div>
+                    <select class="form-control" name="IDThuocTinh">
+                        @foreach (var thuoctinh in dBContext.ThuocTinhs.ToList())
+                        {
+                            <option value="@thuoctinh.ID">@thuoctinh.Ten</option>
+                        }
+                    </select>
+                </div>
+                <button asp-area="Admin" asp-controller="ChiTietBienThe" style="color:red " asp-action="CreateThuocTinh">Thêm nhanh thuộc tính</button>
+            </div>
+            <div class="form-group">
+                <br />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

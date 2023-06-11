@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "GetAllLoaiSP";
     Layout = "~/Views/Shared/_LayoutforAdmin.cshtml";
+    int stt = 1;
 }
 
 <h1>GetAllLoaiSP</h1>
@@ -14,7 +15,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ID)
+                STT
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Ten)
@@ -32,7 +33,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ID)
+                @stt;
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ten)
@@ -46,13 +47,13 @@
                         var LoaiSP = dBContext.LoaiSPs.Find(item.IDLoaiSPCha);
                         if (LoaiSP != null)
                         {
-                            <div>
-                                <strong style="color:red;">
-                                    <span>
-                                        @LoaiSP.Ten
-                                    </span>
-                                </strong>
-                            </div>
+                                    <div>
+                                        <strong style="color:red;">
+                                            <span>
+                                                @LoaiSP.Ten
+                                            </span>
+                                        </strong>
+                                    </div>
                         }
                     }
             </td>

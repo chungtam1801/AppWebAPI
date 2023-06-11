@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_LayoutforAdmin.cshtml";
     ViewData["Title"] = "GetAllThuocTinhLoaiSP";
     AppData.Models.AssignmentDBContext dBContext = new AppData.Models.AssignmentDBContext();
+    int stt = 1;
 }
 
 <h1>GetAllThuocTinhLoaiSP</h1>
@@ -15,7 +16,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ID)
+                STT
             </th>
             <th>
                 Ten Thuoc Tinh
@@ -30,7 +31,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ID)
+                @stt
             </td>
             <td>
                     @{
@@ -38,13 +39,13 @@
                         var thuoctinh = dBContext.ThuocTinhs.Find(item.IDThuocTinh);
                         if (thuoctinh != null)
                         {
-                            <div>
-                                <strong style="color:blue;">
-                                    <span>
-                                        @thuoctinh.Ten
-                                    </span>
-                                </strong>
-                            </div>
+                                <div>
+                                    <strong style="color:blue;">
+                                        <span>
+                                            @thuoctinh.Ten
+                                        </span>
+                                    </strong>
+                                </div>
                         }
                     }
             </td>
@@ -54,13 +55,13 @@
                         var LoaiSP = dBContext.LoaiSPs.Find(item.IDLoaiSP);
                         if (LoaiSP != null)
                         {
-                            <div>
-                                <strong style="color:red;">
-                                    <span>
-                                        @LoaiSP.Ten
-                                    </span>
-                                </strong>
-                            </div>
+                                <div>
+                                    <strong style="color:red;">
+                                        <span>
+                                            @LoaiSP.Ten
+                                        </span>
+                                    </strong>
+                                </div>
                         }
                     }
             </td>

@@ -3,6 +3,7 @@
 @{
     Layout = "~/Views/Shared/_LayoutforAdmin.cshtml";
     ViewData["Title"] = "GetAllSanPham";
+    int stt = 1;
 }
 
 <h1>GetAllSanPham</h1>
@@ -14,7 +15,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ID)
+                STT
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Ten)
@@ -35,7 +36,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ID)
+                @stt
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ten)

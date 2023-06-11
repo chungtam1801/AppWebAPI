@@ -7,6 +7,7 @@
     List<GiaTri> giaTris = ViewBag.GiaTri;
     List<BienThe> bienThes = ViewBag.BienThe;
     List<SanPham> sanPhams = ViewBag.SanPham;
+  
 }
 
 <h1>Create</h1>
@@ -23,17 +24,21 @@
                 <lable>Tên Giá trị</lable>
                 <div>
                     <select class="form-control" name="IDGiaTri">
+                        
                         @foreach (var item in giaTris)
                         {
                             <option value="@item.ID">@item.Ten</option>
                         }
                     </select>
                 </div>
+                <button asp-area="Admin" asp-controller="ChiTietBienThe" style="color:red" asp-action="CreateGiaTri">Thêm nhanh Giá Trị</button>
+                
             </div>
             <div class="form-group">
                 <br />
-            </div><div class="form-group">
-                <lable>Ten sản phẩm</lable>
+            </div>
+            <div class="form-group">
+                <lable>Tên Biến Thể</lable>
                 <div>
                     <select class="form-control" name="IDBienThe">
                         @foreach (var item in bienThes)
@@ -42,6 +47,7 @@
                         }
                     </select>
                 </div>
+                <button asp-area="Admin" asp-controller="ChiTietBienThe" style="color:red " asp-action="CreateBienThe">Thêm nhanh Biến Thể</button>
             </div>
             <div class="form-group">
                 <br />
