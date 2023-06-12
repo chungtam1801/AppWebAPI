@@ -42,10 +42,10 @@ namespace AppAPI.Controllers
 
         // POST api/<SanPhamController>
         [HttpPost("create-san-pham")]
-        public bool Post(string ten,Guid idLoaiSP,string moTa,int trangthai)
+        public bool Post(Guid id, string ten,Guid idLoaiSP,string moTa,int trangthai)
         {
             SanPham sanPham = new SanPham();
-            sanPham.ID = Guid.NewGuid();
+            sanPham.ID = id;
             sanPham.Ten = ten;
             sanPham.IDLoaiSP = idLoaiSP;
             sanPham.MoTa = moTa;

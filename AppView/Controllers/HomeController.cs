@@ -32,33 +32,65 @@ namespace AppView.Controllers
                 ListLoaiSP = JsonConvert.DeserializeObject<List<LoaiSP>>(data);
             }
 
-            return ListLoaiSP;
+            return ListLoaiSP.ToList();
         }
-
-        // HIỂN THỊ DANH SÁCH BIẾN THỂ ĐẦU TIÊN CỦA TỪNG SẢN PHẨM SẢN PHẨM 
-        [HttpGet]
-        public async Task<IActionResult> Shop()
+        public List<SanPham> LoadSP()
         {
-            List<SanPham> listSP = new List<SanPham>();
             HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + "/SanPham").Result;
-
+            List<SanPham> listSP = new List<SanPham>();
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content.ReadAsStringAsync().Result;
                 listSP = JsonConvert.DeserializeObject<List<SanPham>>(data);
-
-                // Lấy danh sách biến thể sản phẩm
-                List<BienThe> listBT = new List<BienThe>();
-                string urlBienThe = $"https://localhost:7021/api/BienThe";
-                var httpClient = new HttpClient();
-                HttpResponseMessage btresponse = await httpClient.GetAsync(urlBienThe);
-                string apiData = await btresponse.Content.ReadAsStringAsync();
-                // Lấy kết quả thu được bằng cách bóc dữ liệu Json
-                List<BienThe> result = JsonConvert.DeserializeObject<List<BienThe>>(apiData);
-                ViewData["listBienThe"] = result;
-                ViewData["listLoaiSP"] = LoadLoaiSP();
             }
-            return View(listSP);
+            return listSP.ToList();
+        }
+        public List<BienThe> LoadBThe()
+        {
+            HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + "/BienThe").Result;
+            List<BienThe> listBT = new List<BienThe>();
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                listBT = JsonConvert.DeserializeObject<List<BienThe>>(data);
+            }
+            return listBT.ToList();
+        }
+
+
+        // HIỂN THỊ DANH SÁCH BIẾN THỂ ĐẦU TIÊN CỦA TỪNG SẢN PHẨM SẢN PHẨM 
+        [HttpGet]
+        public async Task<IActionResult> AllProduct()
+        {
+            ViewData["listBienThe"] = LoadBThe();
+            ViewData["listLoaiSP"] = LoadLoaiSP();
+            return View("Shop", LoadSP());
+        }
+        public async Task<IActionResult> LocLoaiSP(Guid id)
+        {
+            List<SanPham> listSp = LoadSP();
+            var listsp = listSp.Where(c => c.IDLoaiSP.Equals(id)).ToList();
+            ViewData["listBienThe"] = LoadBThe();
+            ViewData["listLoaiSP"] = LoadLoaiSP();
+            return View("Shop", listsp);
+        }
+        [HttpGet]
+        public async Task<IActionResult> TimKiemSanPham(string ten)
+        {
+            List<SanPham> listSp = LoadSP();
+            var listsp = listSp.Where(c => c.Ten.Contains(ten)).ToList();
+            ViewData["listBienThe"] = LoadBThe();
+            ViewData["listLoaiSP"] = LoadLoaiSP();
+            return View("Shop", listsp);
+        }
+        [HttpGet]
+        public async Task<IActionResult> LocKhoangGia(string ten)
+        {
+            List<SanPham> listSp = LoadSP();
+            var listsp = listSp.Where(c => c.Ten.Contains(ten)).ToList();
+            ViewData["listBienThe"] = LoadBThe();
+            ViewData["listLoaiSP"] = LoadLoaiSP();
+            return View("Shop", listsp);
         }
         public IActionResult AboutUs()
         {

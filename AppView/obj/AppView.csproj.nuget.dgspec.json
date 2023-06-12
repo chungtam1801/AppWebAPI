@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\AppView.csproj": {}
+    "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\AppView.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj": {
+    "C:\\Users\\HP\\Desktop\\sạdl\\AppAPI\\AppAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\sạdl\\AppAPI\\AppAPI.csproj",
         "projectName": "AppAPI",
-        "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppAPI\\AppAPI.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj"
+              "C:\\Users\\HP\\Desktop\\sạdl\\AppData\\AppData.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppData\\AppData.csproj"
               }
             }
           }
@@ -79,18 +79,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj": {
+    "C:\\Users\\HP\\Desktop\\sạdl\\AppData\\AppData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\sạdl\\AppData\\AppData.csproj",
         "projectName": "AppData",
-        "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppData\\AppData.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -157,18 +157,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\AppView.csproj": {
+    "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\AppView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\AppView.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\AppView.csproj",
         "projectName": "AppView",
-        "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\AppView.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\AppView.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppView\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -189,11 +189,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppAPI\\AppAPI.csproj"
+              "C:\\Users\\HP\\Desktop\\sạdl\\AppAPI\\AppAPI.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppAPI\\AppAPI.csproj"
               },
-              "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\FPT_Polytechnic\\C#5\\App_Ban_Quan_Ao_Thoi_Trang_Nam\\AppData\\AppData.csproj"
+              "C:\\Users\\HP\\Desktop\\sạdl\\AppData\\AppData.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\sạdl\\AppData\\AppData.csproj"
               }
             }
           }
@@ -245,7 +245,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

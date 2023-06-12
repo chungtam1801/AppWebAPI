@@ -38,10 +38,10 @@ namespace AppAPI.Controllers
 
         // POST api/<BienTheController>
         [HttpPost("create-bien-the")]
-        public bool Post(Guid IdSanPham, int SoLuong, int GiaBan, DateTime NgayTao, string Anh)
+        public bool Post(Guid id, Guid IdSanPham, int SoLuong, int GiaBan, DateTime NgayTao, string Anh)
         {
             BienThe bienThe = new BienThe();
-            bienThe.ID=Guid.NewGuid();
+            bienThe.ID=id;
             bienThe.IDSanPham=IdSanPham;
             bienThe.SoLuong=SoLuong;
             bienThe.GiaBan=GiaBan;

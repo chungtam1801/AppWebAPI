@@ -389,3 +389,131 @@ C:\Users\HP\Desktop\ASS_105\AppAPI\obj\Debug\net6.0\refint\AppAPI.dll
 C:\Users\HP\Desktop\ASS_105\AppAPI\obj\Debug\net6.0\AppAPI.pdb
 C:\Users\HP\Desktop\ASS_105\AppAPI\obj\Debug\net6.0\AppAPI.genruntimeconfig.cache
 C:\Users\HP\Desktop\ASS_105\AppAPI\obj\Debug\net6.0\ref\AppAPI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\appsettings.json
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\AppAPI.exe
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\AppAPI.deps.json
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\AppAPI.runtimeconfig.json
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\AppAPI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\AppAPI.pdb
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\AppData.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\bin\Debug\net6.0\AppData.pdb
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.csproj.AssemblyReference.cache
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.AssemblyInfoInputs.cache
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.AssemblyInfo.cs
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.csproj.CoreCompileInputs.cache
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\scopedcss\bundle\AppAPI.styles.css
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.csproj.CopyComplete
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\refint\AppAPI.dll
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.pdb
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\AppAPI.genruntimeconfig.cache
+D:\Cshap 5 kì 6\ASMCuoiMon\AppWebAPI\AppAPI\obj\Debug\net6.0\ref\AppAPI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\AppAPI.exe
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\AppAPI.deps.json
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\AppAPI.runtimeconfig.json
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\AppAPI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\AppAPI.pdb
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\AppData.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\bin\Debug\net6.0\AppData.pdb
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.AssemblyInfo.cs
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\scopedcss\bundle\AppAPI.styles.css
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.csproj.CopyComplete
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\refint\AppAPI.dll
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.pdb
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\AppAPI.genruntimeconfig.cache
+C:\Users\HP\Desktop\sạdl\AppAPI\obj\Debug\net6.0\ref\AppAPI.dll
