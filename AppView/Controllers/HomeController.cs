@@ -1,4 +1,6 @@
 ﻿using AppData.Models;
+using AppData.ViewModels;
+using AppView.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
@@ -100,9 +102,10 @@ namespace AppView.Controllers
         {
             return View();
         }
-        public IActionResult CheckOut()
+        public IActionResult CheckOut(long tongtien)
         {
-            return View();
+            ViewData["TongTien"] = tongtien;
+            return View();           
         }
         public IActionResult BlogDetails()
         {

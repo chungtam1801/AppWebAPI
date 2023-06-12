@@ -1,8 +1,11 @@
 ﻿@model AppData.ViewModels.HoaDonViewModel
+@using AppData.Models;
 @*
 
 *@
 @{
+	long tongtien = (long)ViewData["TongTien"];
+	long tienship = 0;
 }
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-option">
@@ -26,7 +29,7 @@
 <section class="checkout spad">
 	<div class="container">
 		<div class="checkout__form">
-			<form asp-action="CreateHoaDon" asp-controller="ThanhToan">
+			<form asp-action="TaoHoaDon" asp-controller="ThanhToan">
 				<div class="row">
 					<div class="col-lg-8 col-md-6">
 						<h6 class="coupon__code">
@@ -46,7 +49,7 @@
 						</div>
 						<div class="checkout__input">
 							<p>Province<span>*</span></p>
-							<select id="province" style="display:"></select>
+							<select id="province"></select>
 						</div>
 						<div class="checkout__input">
 							<p>District<span>*</span></p>
@@ -68,13 +71,15 @@
 							<div class="col-lg-6">
 								<div class="checkout__input">
 									<p>Phone<span>*</span></p>
-									<input type="text">
+									<input type="text" asp-for="SDT">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="checkout__input">
 									<p>Email<span>*</span></p>
-									<input type="text">
+									<input type="text" asp-for="Email">
+									<input asp-for="TienShip" id="tienship" style="display: none">
+									<input asp-for="DiaChi" id="diachi" style="display: none" />
 								</div>
 							</div>
 						</div>
@@ -117,7 +122,8 @@
 							<li>04. Cluten free mini dozen <span>$ 110.0</span></li>
 							</ul>*@
 							<ul class="checkout__order__products">
-								<li>Subtotal <span>$750.99</span></li>
+								<li>Subtotal <span>@tongtien.ToString("n0") VND</span></li>
+								<li>Fee <span id="fee">@tienship.ToString("n0") VND</span></li>
 								<li>Total <span>$750.99</span></li>
 							</ul>
 							@*<div class="checkout__input__checkbox">
@@ -141,7 +147,7 @@
 							<span class="checkmark"></span>
 							</label>
 							</div>*@
-							<button type="submit" class="site-btn">PLACE ORDER</button>
+							<button onclick="createhoadon()" class="site-btn">PLACE ORDER</button>
 						</div>
 					</div>
 				</div>
@@ -153,6 +159,9 @@
 	{
 	<script>
 		$(document).ready(function() {
+            var strProvince = "";
+            var strDistrict = "";
+            var strWard = "";
 			$.ajax({
 				type: "GET",
 				url: "https://online-gateway.ghn.vn/shiip/public-api/master-data/province",
@@ -161,7 +170,7 @@
 				dataType: "json",
 				success: function(data) {
 					for (var i = 0; i < data.data.length; i++) {
-						var rows = "<option value='" + data.data[i].ProvinceID + "'>" + data.data[i].ProvinceName + "</option>";
+						var rows = "<option id='" + data.data[i].ProvinceID + "' value='" + data.data[i].ProvinceID + "'>" + data.data[i].ProvinceName + "</option>";
 						$('#province').append(rows);
 					}
 				},
@@ -171,6 +180,7 @@
 			});
 			$("#province").change(function() {
 				var value = document.getElementById("province").value;
+                strProvince = document.getElementById(value).innerHTML;
 				$.ajax({
 					type: "GET",
 					url: "https://online-gateway.ghn.vn/shiip/public-api/master-data/district?province_id=" + value,
@@ -179,7 +189,7 @@
 					dataType: "json",
 					success: function(data) {
 						for (var i = 0; i < data.data.length; i++) {
-							var rows = "<option value='" + data.data[i].DistrictID + "'>" + data.data[i].DistrictName + "</option>";
+							var rows = "<option id='" + data.data[i].DistrictID + "' value='" + data.data[i].DistrictID + "'>" + data.data[i].DistrictName + "</option>";
 							$('#district').append(rows);
 						}
 					},
@@ -190,6 +200,7 @@
 			});
 			$("#district").change(function() {
 				var value = document.getElementById("district").value;
+				strDistrict = document.getElementById(value).innerHTML;
 				$.ajax({
 					type: "GET",
 					url: "https://online-gateway.ghn.vn/shiip/public-api/master-data/ward?district_id=" + value,
@@ -198,7 +209,7 @@
 					dataType: "json",
 					success: function(data) {
 						for (var i = 0; i < data.data.length; i++) {
-							var rows = "<option value='" + data.data[i].WardCode + "'>" + data.data[i].WardName + "</option>";
+							var rows = "<option id='" + data.data[i].WardCode + "' value='" + data.data[i].WardCode + "'>" + data.data[i].WardName + "</option>";
 							$('#ward').append(rows);
 						}
 					},
@@ -206,15 +217,15 @@
 						alert(reponse.responseText);
 					}
 				});
-		        $.ajax({
+				$.ajax({
 					type: "GET",
-					url: "https://online-gateway.ghn.vn/shiip/public-api/v2/shipping-order/available-services?shop_id=4228407&from_district=1542&to_district="+value,
+					url: "https://online-gateway.ghn.vn/shiip/public-api/v2/shipping-order/available-services?shop_id=4228407&from_district=1542&to_district=" + value,
 					headers: { token: '9f4e42e4-fde8-11ed-a281-3aa62a37e0a5' },
 					contentType: "application/json; charset=utf-8",
 					dataType: "json",
 					success: function(data) {
 						for (var i = 0; i < data.data.length; i++) {
-							var rows = "<option value='" + data.data[i].service_id + "'>" + data.data[i].short_name	 + "</option>";
+							var rows = "<option value='" + data.data[i].service_id + "'>" + data.data[i].short_name + "</option>";
 							$('#service').append(rows);
 						}
 					},
@@ -227,14 +238,17 @@
 				var value1 = document.getElementById("ward").value;
 				var value2 = document.getElementById("district").value;
 				var value3 = document.getElementById("service").value;
+			    strWard = document.getElementById(value1).innerHTML;
 				$.ajax({
 					type: "GET",
-					url: "https://online-gateway.ghn.vn/shiip/public-api/v2/shipping-order/fee?to_ward_code="+value1+"&to_district_id="+value2+"&weight=1&from_district_id=1542&from_ward_code=21211&from&service_id="+value3,
-					headers: { token: '9f4e42e4-fde8-11ed-a281-3aa62a37e0a5' , shop_id: 4228407},
+					url: "https://online-gateway.ghn.vn/shiip/public-api/v2/shipping-order/fee?to_ward_code=" + value1 + "&to_district_id=" + value2 + "&weight=1&from_district_id=1542&from_ward_code=21211&from&service_id=" + value3,
+					headers: { token: '9f4e42e4-fde8-11ed-a281-3aa62a37e0a5', shop_id: 4228407 },
 					contentType: "application/json; charset=utf-8",
 					dataType: "json",
 					success: function(data) {
-						console.log("Tienship: " + data.data.total);
+						document.getElementById("fee").innerHTML = data.data.total + " VNĐ";
+                        document.getElementById("tienship").value = data.data.total;
+                        document.getElementById("diachi").value = strProvince + ", " + strDistrict + ", " + strProvince;
 					},
 					error: function(reponse) {
 						alert(reponse.responseText);

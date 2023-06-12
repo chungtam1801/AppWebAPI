@@ -4,7 +4,7 @@ namespace AppData.ViewModels
 {
     public class HoaDonViewModel
     {
-        public List<ChiTietGioHang> ChiTietGioHangs { get; set; }
+        public List<ChiTietHoaDonViewModel> ChiTietHoaDons { get; set; }
         public string Ten { get; set; }
         public string SDT { get; set; }
         public string Email { get; set; }

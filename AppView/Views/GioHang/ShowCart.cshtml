@@ -7,7 +7,6 @@
     var listSP = ViewData["listSP"] as List<SanPham>;
     long tongTien = 0;
     int tongSL = 0;
-
 }
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-option">
@@ -45,10 +44,10 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                                BienThe bthe = listbt.Where(c => c.ID.Equals(item.IDBienThe)).FirstOrDefault();
-                                SanPham spham = listSP.Where(c => c.ID.Equals(bthe.IDSanPham)).FirstOrDefault();
-                                if (bthe != null)
+                                if (listbt != null)
                                 {
+                                    BienThe bthe = listbt.Where(c => c.ID.Equals(item.IDBienThe)).FirstOrDefault();
+                                SanPham spham = listSP.Where(c => c.ID.Equals(bthe.IDSanPham)).FirstOrDefault();
                                     var thanhtien = item.SoLuong * bthe.GiaBan;
                                     tongTien += thanhtien;
                                     <tr>
@@ -108,7 +107,7 @@
                         <li>Subtotal <span>@tongTien.ToString("n0") VND</span></li>
                         <li>Total <span>@tongTien.ToString("n0") VND</span></li>
                     </ul>
-                    <a class="primary-btn" asp-controller="Home" asp-action="CheckOut">Proceed to checkout</a>
+                    <a class="primary-btn" asp-controller="Home" asp-action="CheckOut" asp-route-tongtien="@tongTien">Proceed to checkout</a>
                 </div>
             </div>
         </div>

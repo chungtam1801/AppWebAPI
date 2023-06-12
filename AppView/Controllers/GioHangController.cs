@@ -102,6 +102,8 @@ namespace AppView.Controllers
                 {
                     TempData["Message"] = "Không có sản phẩm nào trong giỏ hàng!";
                 }
+                ViewData["listBienThe"] = LoadBThe();
+                ViewData["listSP"] = LoadSP();
                 return View(ctgh);
             }
         }

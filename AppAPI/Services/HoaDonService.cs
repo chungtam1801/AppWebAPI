@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Microsoft.EntityFrameworkCore;
 using AppData.IRepositories;
 using AppData.Repositories;
+using AppData.ViewModels;
 
 namespace AppAPI.Services
 {
@@ -30,7 +31,7 @@ namespace AppAPI.Services
         {
             return reposHoaDon.GetAll();
         }
-        public bool CreateHoaDon(List<ChiTietGioHang> chiTietGioHangs, string ten, string SDT, string email, string phuongThucThanhToan, string diaChi, int tienShip)
+        public bool CreateHoaDon(List<ChiTietHoaDonViewModel> chiTietHoaDons, string ten, string SDT, string email, string phuongThucThanhToan, string diaChi, int tienShip)
         {
             try
             {
@@ -46,7 +47,7 @@ namespace AppAPI.Services
                 hoaDon.TrangThaiGiaoHang = 1;
                 if (reposHoaDon.Add(hoaDon))
                 {
-                    foreach (var x in chiTietGioHangs)
+                    foreach (var x in chiTietHoaDons)
                     {
                         ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon();
                         chiTietHoaDon.ID = Guid.NewGuid();
