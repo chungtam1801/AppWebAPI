@@ -122,9 +122,9 @@
 							<li>04. Cluten free mini dozen <span>$ 110.0</span></li>
 							</ul>*@
 							<ul class="checkout__order__products">
-								<li>Subtotal <span>@tongtien.ToString("n0") VND</span></li>
-								<li>Fee <span id="fee">@tienship.ToString("n0") VND</span></li>
-								<li>Total <span>$750.99</span></li>
+								<li>Subtotal <span>@tongtien.ToString("n0") VNĐ</span></li>
+								<li>Fee <span id="fee">@tienship.ToString("n0") VNĐ</span></li>
+								<li>Total <span id="total">0 VNĐ</span></li>
 							</ul>
 							@*<div class="checkout__input__checkbox">
 							<label for="acc-or">
@@ -248,6 +248,7 @@
 					success: function(data) {
 						document.getElementById("fee").innerHTML = data.data.total + " VNĐ";
                         document.getElementById("tienship").value = data.data.total;
+						document.getElementById("total").innerHTML = data.data.total + @tongtien + " VNĐ";
                         document.getElementById("diachi").value = strProvince + ", " + strDistrict + ", " + strProvince;
 					},
 					error: function(reponse) {

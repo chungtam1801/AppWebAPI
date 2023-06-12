@@ -168,6 +168,7 @@ namespace AppView.Controllers
                     };
                     var url = $"https://localhost:7021/api/ChiTietGioHang/create-chi-tiet-gio-hang?IdBienthe={cartitem.IDBienThe}&IdNguoiDung={cartitem.IDNguoiDung}&soluong={cartitem.SoLuong}";
                     var response = await _httpClient.PostAsync(url, null);
+                    
                 }
                 else // Không rỗng thì ktra có chứa sản phẩm đấy không
                 {
